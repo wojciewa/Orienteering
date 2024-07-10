@@ -1,0 +1,11 @@
+<strings>
+    <string id="AppName">Runners</string>
+    <string id="pace">PACE</string>
+    <string id="avgpace">AVG PACE</string>
+    <string id="hr">HR</string>
+    <string id="distance">DIST</string>
+    <string id="duration">DURATION</string>
+    <string id="tmpDist">TMP DIST</string>
+    <string id="gpsSig">GPS!</string>
+    <string id="saved">Saved</string>
+</strings>

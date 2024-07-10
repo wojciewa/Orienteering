@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="1" lineNum="45" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="1" lineNum="46" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="2" lineNum="95" parent="globals/Delegate" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="3" lineNum="99" parent="globals/Delegate" pc="268435505" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="3" lineNum="100" parent="globals/Delegate" pc="268435507" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="3" lineNum="101" parent="globals/Delegate" pc="268435525" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="4" lineNum="104" parent="globals/Delegate" pc="268435536" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="4" lineNum="105" parent="globals/Delegate" pc="268435538" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="4" lineNum="106" parent="globals/Delegate" pc="268435556" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="10" parent="globals/OrienteeringView" pc="268435559" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="14" parent="globals/OrienteeringView" pc="268435577" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="15" parent="globals/OrienteeringView" pc="268435610" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="16" parent="globals/OrienteeringView" pc="268435630" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="22" parent="globals/OrienteeringView" pc="268435650" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="23" parent="globals/OrienteeringView" pc="268435670" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="24" parent="globals/OrienteeringView" pc="268435690" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="25" parent="globals/OrienteeringView" pc="268435710" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="26" parent="globals/OrienteeringView" pc="268435730" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="27" parent="globals/OrienteeringView" pc="268435750" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="28" parent="globals/OrienteeringView" pc="268435770" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="29" parent="globals/OrienteeringView" pc="268435790" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="30" parent="globals/OrienteeringView" pc="268435810" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="5" lineNum="31" parent="globals/OrienteeringView" pc="268435830" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="99" parent="globals/OrienteeringView" pc="268435851" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="100" parent="globals/OrienteeringView" pc="268435853" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="102" parent="globals/OrienteeringView" pc="268435869" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="103" parent="globals/OrienteeringView" pc="268435898" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="104" parent="globals/OrienteeringView" pc="268435922" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="106" parent="globals/OrienteeringView" pc="268435938" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="108" parent="globals/OrienteeringView" pc="268435951" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="110" parent="globals/OrienteeringView" pc="268435980" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="111" parent="globals/OrienteeringView" pc="268436027" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="6" lineNum="112" parent="globals/OrienteeringView" pc="268436074" symbol="setDeviceSettingsDependentVariables"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="74" parent="globals/OrienteeringView" pc="268436122" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="76" parent="globals/OrienteeringView" pc="268436124" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="77" parent="globals/OrienteeringView" pc="268436161" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="81" parent="globals/OrienteeringView" pc="268436198" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="86" parent="globals/OrienteeringView" pc="268436223" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="88" parent="globals/OrienteeringView" pc="268436260" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="89" parent="globals/OrienteeringView" pc="268436297" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="7" lineNum="90" parent="globals/OrienteeringView" pc="268436334" symbol="compute"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="8" lineNum="64" parent="globals/OrienteeringView" pc="268436372" symbol="doUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="8" lineNum="65" parent="globals/OrienteeringView" pc="268436374" symbol="doUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="9" lineNum="95" parent="globals/OrienteeringView" pc="268436391" symbol="onLayout"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="9" lineNum="96" parent="globals/OrienteeringView" pc="268436393" symbol="onLayout"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="10" lineNum="377" parent="globals/OrienteeringView" pc="268436406" symbol="startRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="10" lineNum="378" parent="globals/OrienteeringView" pc="268436408" symbol="startRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="10" lineNum="379" parent="globals/OrienteeringView" pc="268436472" symbol="startRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="10" lineNum="380" parent="globals/OrienteeringView" pc="268436490" symbol="startRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="274" parent="globals/OrienteeringView" pc="268436503" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="275" parent="globals/OrienteeringView" pc="268436505" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="276" parent="globals/OrienteeringView" pc="268436533" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="277" parent="globals/OrienteeringView" pc="268436553" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="278" parent="globals/OrienteeringView" pc="268436564" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="279" parent="globals/OrienteeringView" pc="268436600" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="282" parent="globals/OrienteeringView" pc="268436702" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="283" parent="globals/OrienteeringView" pc="268436713" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="284" parent="globals/OrienteeringView" pc="268436752" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="285" parent="globals/OrienteeringView" pc="268436763" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="287" parent="globals/OrienteeringView" pc="268436802" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="289" parent="globals/OrienteeringView" pc="268436834" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="291" parent="globals/OrienteeringView" pc="268436887" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="11" lineNum="292" parent="globals/OrienteeringView" pc="268436915" symbol="drawBattery"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="295" parent="globals/OrienteeringView" pc="268436960" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="296" parent="globals/OrienteeringView" pc="268436962" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="297" parent="globals/OrienteeringView" pc="268436998" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="298" parent="globals/OrienteeringView" pc="268437036" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="299" parent="globals/OrienteeringView" pc="268437062" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="301" parent="globals/OrienteeringView" pc="268437094" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="302" parent="globals/OrienteeringView" pc="268437130" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="303" parent="globals/OrienteeringView" pc="268437168" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="304" parent="globals/OrienteeringView" pc="268437194" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="306" parent="globals/OrienteeringView" pc="268437232" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="307" parent="globals/OrienteeringView" pc="268437268" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="308" parent="globals/OrienteeringView" pc="268437306" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="12" lineNum="309" parent="globals/OrienteeringView" pc="268437332" symbol="drawGpsSign"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="172" parent="globals/OrienteeringView" pc="268437371" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="175" parent="globals/OrienteeringView" pc="268437373" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="176" parent="globals/OrienteeringView" pc="268437390" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="177" parent="globals/OrienteeringView" pc="268437441" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="178" parent="globals/OrienteeringView" pc="268437458" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="179" parent="globals/OrienteeringView" pc="268437509" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="180" parent="globals/OrienteeringView" pc="268437526" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="13" lineNum="182" parent="globals/OrienteeringView" pc="268437577" symbol="drawGPS"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="218" parent="globals/OrienteeringView" pc="268437626" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="220" parent="globals/OrienteeringView" pc="268437630" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="226" parent="globals/OrienteeringView" pc="268437644" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="224" parent="globals/OrienteeringView" pc="268437644" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="223" parent="globals/OrienteeringView" pc="268437644" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="227" parent="globals/OrienteeringView" pc="268437665" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="233" parent="globals/OrienteeringView" pc="268437686" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="234" parent="globals/OrienteeringView" pc="268437718" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="235" parent="globals/OrienteeringView" pc="268437758" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="238" parent="globals/OrienteeringView" pc="268437798" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="239" parent="globals/OrienteeringView" pc="268437798" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="240" parent="globals/OrienteeringView" pc="268437831" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="241" parent="globals/OrienteeringView" pc="268437834" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="242" parent="globals/OrienteeringView" pc="268437856" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="244" parent="globals/OrienteeringView" pc="268437878" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="245" parent="globals/OrienteeringView" pc="268437889" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="246" parent="globals/OrienteeringView" pc="268437899" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="249" parent="globals/OrienteeringView" pc="268437912" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="250" parent="globals/OrienteeringView" pc="268437919" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="252" parent="globals/OrienteeringView" pc="268437963" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="255" parent="globals/OrienteeringView" pc="268438030" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="257" parent="globals/OrienteeringView" pc="268438040" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="260" parent="globals/OrienteeringView" pc="268438080" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="261" parent="globals/OrienteeringView" pc="268438108" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="264" parent="globals/OrienteeringView" pc="268438140" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="265" parent="globals/OrienteeringView" pc="268438172" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="267" parent="globals/OrienteeringView" pc="268438247" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="269" parent="globals/OrienteeringView" pc="268438302" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="14" lineNum="270" parent="globals/OrienteeringView" pc="268438316" symbol="drawValues"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="15" lineNum="342" parent="globals/OrienteeringView" pc="268438331" symbol="zeroLapDistance"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="15" lineNum="344" parent="globals/OrienteeringView" pc="268438335" symbol="zeroLapDistance"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="15" lineNum="352" parent="globals/OrienteeringView" pc="268438489" symbol="zeroLapDistance"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="16" lineNum="363" parent="globals/OrienteeringView" pc="268438514" symbol="startActivity"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="16" lineNum="365" parent="globals/OrienteeringView" pc="268438516" symbol="startActivity"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="16" lineNum="366" parent="globals/OrienteeringView" pc="268438533" symbol="startActivity"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="16" lineNum="367" parent="globals/OrienteeringView" pc="268438544" symbol="startActivity"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="16" lineNum="370" parent="globals/OrienteeringView" pc="268438559" symbol="startActivity"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="17" lineNum="418" parent="globals/OrienteeringView" pc="268438572" symbol="getGPSPower"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="17" lineNum="419" parent="globals/OrienteeringView" pc="268438576" symbol="getGPSPower"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="17" lineNum="421" parent="globals/OrienteeringView" pc="268438609" symbol="getGPSPower"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="17" lineNum="423" parent="globals/OrienteeringView" pc="268438621" symbol="getGPSPower"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="17" lineNum="425" parent="globals/OrienteeringView" pc="268438638" symbol="getGPSPower"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="17" lineNum="433" parent="globals/OrienteeringView" pc="268438758" symbol="getGPSPower"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="331" parent="globals/OrienteeringView" pc="268438786" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="332" parent="globals/OrienteeringView" pc="268438790" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="333" parent="globals/OrienteeringView" pc="268438811" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="334" parent="globals/OrienteeringView" pc="268438821" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="335" parent="globals/OrienteeringView" pc="268438834" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="336" parent="globals/OrienteeringView" pc="268438847" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="337" parent="globals/OrienteeringView" pc="268438860" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="18" lineNum="339" parent="globals/OrienteeringView" pc="268438903" symbol="getMinutesPerKmOrMile"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="19" lineNum="120" parent="globals/OrienteeringView" pc="268438912" symbol="onHide"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="19" lineNum="121" parent="globals/OrienteeringView" pc="268438914" symbol="onHide"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="20" lineNum="323" parent="globals/OrienteeringView" pc="268438925" symbol="toNumberCeil"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="20" lineNum="324" parent="globals/OrienteeringView" pc="268438929" symbol="toNumberCeil"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="20" lineNum="325" parent="globals/OrienteeringView" pc="268438942" symbol="toNumberCeil"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="20" lineNum="326" parent="globals/OrienteeringView" pc="268438956" symbol="toNumberCeil"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="20" lineNum="328" parent="globals/OrienteeringView" pc="268438968" symbol="toNumberCeil"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="384" parent="globals/OrienteeringView" pc="268438971" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="385" parent="globals/OrienteeringView" pc="268438975" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="386" parent="globals/OrienteeringView" pc="268438985" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="387" parent="globals/OrienteeringView" pc="268439033" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="388" parent="globals/OrienteeringView" pc="268439045" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="389" parent="globals/OrienteeringView" pc="268439057" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="390" parent="globals/OrienteeringView" pc="268439066" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="392" parent="globals/OrienteeringView" pc="268439078" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="21" lineNum="400" parent="globals/OrienteeringView" pc="268439232" symbol="stopRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="22" lineNum="115" parent="globals/OrienteeringView" pc="268439260" symbol="onShow"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="22" lineNum="116" parent="globals/OrienteeringView" pc="268439262" symbol="onShow"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="22" lineNum="117" parent="globals/OrienteeringView" pc="268439272" symbol="onShow"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="23" lineNum="68" parent="globals/OrienteeringView" pc="268439273" symbol="setupTimer"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="23" lineNum="69" parent="globals/OrienteeringView" pc="268439275" symbol="setupTimer"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="23" lineNum="70" parent="globals/OrienteeringView" pc="268439311" symbol="setupTimer"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="186" parent="globals/OrienteeringView" pc="268439353" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="189" parent="globals/OrienteeringView" pc="268439355" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="190" parent="globals/OrienteeringView" pc="268439387" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="191" parent="globals/OrienteeringView" pc="268439433" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="192" parent="globals/OrienteeringView" pc="268439479" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="196" parent="globals/OrienteeringView" pc="268439525" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="24" lineNum="197" parent="globals/OrienteeringView" pc="268439561" symbol="drawHeaders"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="153" parent="globals/OrienteeringView" pc="268439600" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="155" parent="globals/OrienteeringView" pc="268439604" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="156" parent="globals/OrienteeringView" pc="268439621" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="157" parent="globals/OrienteeringView" pc="268439621" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="158" parent="globals/OrienteeringView" pc="268439632" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="159" parent="globals/OrienteeringView" pc="268439706" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="161" parent="globals/OrienteeringView" pc="268439716" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="162" parent="globals/OrienteeringView" pc="268439801" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="164" parent="globals/OrienteeringView" pc="268439833" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="165" parent="globals/OrienteeringView" pc="268439869" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="166" parent="globals/OrienteeringView" pc="268439901" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="167" parent="globals/OrienteeringView" pc="268439933" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="25" lineNum="168" parent="globals/OrienteeringView" pc="268439977" symbol="drawCurrentTime"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="26" lineNum="312" parent="globals/OrienteeringView" pc="268440018" symbol="computeHour"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="26" lineNum="313" parent="globals/OrienteeringView" pc="268440020" symbol="computeHour"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="26" lineNum="314" parent="globals/OrienteeringView" pc="268440031" symbol="computeHour"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="26" lineNum="316" parent="globals/OrienteeringView" pc="268440043" symbol="computeHour"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="26" lineNum="317" parent="globals/OrienteeringView" pc="268440054" symbol="computeHour"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="26" lineNum="319" parent="globals/OrienteeringView" pc="268440066" symbol="computeHour"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="27" lineNum="406" parent="globals/OrienteeringView" pc="268440069" symbol="isSessionRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="27" lineNum="407" parent="globals/OrienteeringView" pc="268440071" symbol="isSessionRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="27" lineNum="408" parent="globals/OrienteeringView" pc="268440084" symbol="isSessionRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="27" lineNum="410" parent="globals/OrienteeringView" pc="268440105" symbol="isSessionRecording"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="142" parent="globals/OrienteeringView" pc="268440108" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="143" parent="globals/OrienteeringView" pc="268440110" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="144" parent="globals/OrienteeringView" pc="268440121" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="145" parent="globals/OrienteeringView" pc="268440141" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="146" parent="globals/OrienteeringView" pc="268440200" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="147" parent="globals/OrienteeringView" pc="268440259" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="148" parent="globals/OrienteeringView" pc="268440318" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="28" lineNum="149" parent="globals/OrienteeringView" pc="268440377" symbol="setColors"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="29" lineNum="414" parent="globals/OrienteeringView" pc="268440440" symbol="appExit"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="29" lineNum="415" parent="globals/OrienteeringView" pc="268440442" symbol="appExit"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="30" lineNum="58" parent="globals/OrienteeringView" pc="268440471" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="30" lineNum="59" parent="globals/OrienteeringView" pc="268440473" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="30" lineNum="60" parent="globals/OrienteeringView" pc="268440491" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="200" parent="globals/OrienteeringView" pc="268440504" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="202" parent="globals/OrienteeringView" pc="268440508" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="203" parent="globals/OrienteeringView" pc="268440508" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="204" parent="globals/OrienteeringView" pc="268440519" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="205" parent="globals/OrienteeringView" pc="268440532" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="206" parent="globals/OrienteeringView" pc="268440543" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="208" parent="globals/OrienteeringView" pc="268440564" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="211" parent="globals/OrienteeringView" pc="268440585" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="31" lineNum="214" parent="globals/OrienteeringView" pc="268440595" symbol="getDistString"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="124" parent="globals/OrienteeringView" pc="268440598" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="125" parent="globals/OrienteeringView" pc="268440602" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="126" parent="globals/OrienteeringView" pc="268440616" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="133" parent="globals/OrienteeringView" pc="268440620" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="135" parent="globals/OrienteeringView" pc="268440632" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="136" parent="globals/OrienteeringView" pc="268440660" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="137" parent="globals/OrienteeringView" pc="268440692" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="138" parent="globals/OrienteeringView" pc="268440709" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringView.mc" id="32" lineNum="139" parent="globals/OrienteeringView" pc="268440723" symbol="onUpdate"/>
+        <entry filename="Rez.mc" id="33" lineNum="1" parent="globals/Rez" pc="268440738" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="34" lineNum="4" parent="globals/OrientDelegate" pc="268440757" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="35" lineNum="8" parent="globals/OrientDelegate" pc="268440776" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="35" lineNum="9" parent="globals/OrientDelegate" pc="268440778" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="35" lineNum="10" parent="globals/OrientDelegate" pc="268440796" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="21" parent="globals/OrientDelegate" pc="268440807" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="22" parent="globals/OrientDelegate" pc="268440811" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="24" parent="globals/OrientDelegate" pc="268440824" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="26" parent="globals/OrientDelegate" pc="268440831" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="27" parent="globals/OrientDelegate" pc="268440860" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="28" parent="globals/OrientDelegate" pc="268440878" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="30" parent="globals/OrientDelegate" pc="268440899" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="33" parent="globals/OrientDelegate" pc="268440919" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="34" parent="globals/OrientDelegate" pc="268440937" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringDelegate.mc" id="36" lineNum="37" parent="globals/OrientDelegate" pc="268440961" symbol="onKey"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="37" lineNum="6" parent="globals/Alert" pc="268440964" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="38" lineNum="47" parent="globals/Alert" pc="268440983" symbol="onShow"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="38" lineNum="48" parent="globals/Alert" pc="268440985" symbol="onShow"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="39" lineNum="89" parent="globals/Alert" pc="268441030" symbol="pushView"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="39" lineNum="90" parent="globals/Alert" pc="268441032" symbol="pushView"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="40" lineNum="85" parent="globals/Alert" pc="268441081" symbol="dismiss"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="40" lineNum="86" parent="globals/Alert" pc="268441083" symbol="dismiss"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="15" parent="globals/Alert" pc="268441112" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="16" parent="globals/Alert" pc="268441114" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="18" parent="globals/Alert" pc="268441132" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="19" parent="globals/Alert" pc="268441156" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="20" parent="globals/Alert" pc="268441169" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="24" parent="globals/Alert" pc="268441185" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="25" parent="globals/Alert" pc="268441209" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="26" parent="globals/Alert" pc="268441222" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="29" parent="globals/Alert" pc="268441245" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="30" parent="globals/Alert" pc="268441269" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="31" parent="globals/Alert" pc="268441282" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="34" parent="globals/Alert" pc="268441305" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="35" parent="globals/Alert" pc="268441329" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="36" parent="globals/Alert" pc="268441342" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="39" parent="globals/Alert" pc="268441365" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="40" parent="globals/Alert" pc="268441389" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="41" parent="globals/Alert" pc="268441402" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="41" lineNum="44" parent="globals/Alert" pc="268441418" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="42" lineNum="51" parent="globals/Alert" pc="268441453" symbol="onHide"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="42" lineNum="52" parent="globals/Alert" pc="268441455" symbol="onHide"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="55" parent="globals/Alert" pc="268441474" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="56" parent="globals/Alert" pc="268441478" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="57" parent="globals/Alert" pc="268441507" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="59" parent="globals/Alert" pc="268441528" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="60" parent="globals/Alert" pc="268441538" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="62" parent="globals/Alert" pc="268441548" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="63" parent="globals/Alert" pc="268441570" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="65" parent="globals/Alert" pc="268441592" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="66" parent="globals/Alert" pc="268441620" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="68" parent="globals/Alert" pc="268441640" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="69" parent="globals/Alert" pc="268441668" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="70" parent="globals/Alert" pc="268441686" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="71" parent="globals/Alert" pc="268441693" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="72" parent="globals/Alert" pc="268441700" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="73" parent="globals/Alert" pc="268441713" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="75" parent="globals/Alert" pc="268441726" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="78" parent="globals/Alert" pc="268441759" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="79" parent="globals/Alert" pc="268441778" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="81" parent="globals/Alert" pc="268441791" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\MsgBox.mc" id="43" lineNum="82" parent="globals/Alert" pc="268441819" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="44" lineNum="7" parent="globals/OrienteeringApp" pc="268441877" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="45" lineNum="16" parent="globals/OrienteeringApp" pc="268441896" symbol="onStart"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="45" lineNum="17" parent="globals/OrienteeringApp" pc="268441898" symbol="onStart"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="45" lineNum="18" parent="globals/OrienteeringApp" pc="268441919" symbol="onStart"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="46" lineNum="28" parent="globals/OrienteeringApp" pc="268441964" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="46" lineNum="29" parent="globals/OrienteeringApp" pc="268441968" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="46" lineNum="30" parent="globals/OrienteeringApp" pc="268442002" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="46" lineNum="31" parent="globals/OrienteeringApp" pc="268442038" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="47" lineNum="11" parent="globals/OrienteeringApp" pc="268442071" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="47" lineNum="12" parent="globals/OrienteeringApp" pc="268442073" symbol="initialize"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="48" lineNum="22" parent="globals/OrienteeringApp" pc="268442092" symbol="onStop"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="48" lineNum="23" parent="globals/OrienteeringApp" pc="268442094" symbol="onStop"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="48" lineNum="24" parent="globals/OrienteeringApp" pc="268442115" symbol="onStop"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="49" lineNum="34" parent="globals/OrienteeringApp" pc="268442160" symbol="onPositionUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="49" lineNum="35" parent="globals/OrienteeringApp" pc="268442164" symbol="onPositionUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="49" lineNum="36" parent="globals/OrienteeringApp" pc="268442168" symbol="onPositionUpdate"/>
+        <entry filename="C:\\Users\\wojci\\OneDrive\\Dokumenty\\Garmin\\Orienteering\\source\\OrienteeringApp.mc" id="49" lineNum="38" parent="globals/OrienteeringApp" pc="268442192" symbol="onPositionUpdate"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="69" symbol="fgcolor"/>
+        <entry field="true" id="18" symbol="ZERO_DISTANCE"/>
+        <entry id="33" method="true" symbol="drawGpsSign"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="60" method="true" symbol="stopRecording"/>
+        <entry id="59" method="true" symbol="startRecording"/>
+        <entry field="true" id="16" symbol="HEADER_FONT"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
+        <entry field="true" id="44" symbol="hrColor"/>
+        <entry field="true" id="71" symbol="timer"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry field="true" id="41" symbol="hasBackgroundColorOption"/>
+        <entry field="true" id="79" symbol="pace"/>
+        <entry field="true" id="42" symbol="hasGPSSignal"/>
+        <entry id="34" method="true" symbol="drawHeaders"/>
+        <entry field="true" id="54" symbol="paceStr"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="48" symbol="inverseTextColor"/>
+        <entry id="12" object="true" symbol="OrienteeringApp"/>
+        <entry field="true" id="75" symbol="AppName"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="76" symbol="avgpace"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="46" symbol="inactiveGpsBackground"/>
+        <entry field="true" id="8388935" method="true" symbol="duration"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="8391038" symbol="textColor"/>
+        <entry field="true" id="70" symbol="timeout"/>
+        <entry field="true" id="51" symbol="lapDistance"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="28" method="true" symbol="doUpdate"/>
+        <entry id="62" method="true" symbol="toNumberCeil"/>
+        <entry id="49" method="true" symbol="isSessionRecording"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="8389348" symbol="font"/>
+        <entry id="65" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="39" method="true" symbol="getMinutesPerKmOrMile"/>
+        <entry field="true" id="72" symbol="_mainView"/>
+        <entry id="38" method="true" symbol="getGPSPower"/>
+        <entry field="true" id="36" symbol="durationStr"/>
+        <entry id="30" method="true" symbol="drawBattery"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="78" symbol="hr"/>
+        <entry id="55" method="true" symbol="setColors"/>
+        <entry field="true" id="23" symbol="avgPaceStr"/>
+        <entry id="31" method="true" symbol="drawCurrentTime"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="8389627" method="true" symbol="getBackgroundColor"/>
+        <entry field="true" id="67" symbol="bgcolor"/>
+        <entry field="true" id="52" symbol="lastLapDistance"/>
+        <entry field="true" id="45" symbol="hrStr"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="61" symbol="tmpDistStr"/>
+        <entry field="true" id="8388911" symbol="distance"/>
+        <entry field="true" id="81" symbol="tmpDist"/>
+        <entry field="true" id="17" symbol="VALUE_FONT"/>
+        <entry id="58" method="true" symbol="startActivity"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="19" symbol="ZERO_TIME"/>
+        <entry id="8389049" method="true" symbol="pushView"/>
+        <entry field="true" id="8388751" symbol="averageCadence"/>
+        <entry id="68" method="true" symbol="dismiss"/>
+        <entry id="32" method="true" symbol="drawGPS"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="8389401" symbol="is24Hour"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="37" method="true" symbol="getDistString"/>
+        <entry field="true" id="66" symbol="&lt;globals/OrientDelegate/&lt;&gt;_parentView&gt;"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="8389402" symbol="distanceUnits"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="26" method="true" symbol="computeHour"/>
+        <entry field="true" id="74" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="24" symbol="batteryBackground"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="15" symbol="CENTER"/>
+        <entry id="63" method="true" symbol="zeroLapDistance"/>
+        <entry field="true" id="53" symbol="myTimer"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="20" symbol="&lt;globals/OrienteeringView/&lt;&gt;_session&gt;"/>
+        <entry id="13" object="true" symbol="OrienteeringView"/>
+        <entry field="true" id="29" symbol="doUpdates"/>
+        <entry field="true" id="25" symbol="batteryColor1"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="77" symbol="gpsSig"/>
+        <entry field="true" id="43" symbol="headerColor"/>
+        <entry id="11" object="true" symbol="OrientDelegate"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="14" symbol="view"/>
+        <entry id="57" method="true" symbol="setupTimer"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="35" method="true" symbol="drawValues"/>
+        <entry field="true" id="8388752" symbol="maxCadence"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry field="true" id="80" symbol="saved"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="73" method="true" symbol="onPositionUpdate"/>
+        <entry id="10" object="true" symbol="Delegate"/>
+        <entry field="true" id="8388732" symbol="elapsedTime"/>
+        <entry id="8389097" method="true" symbol="onKey"/>
+        <entry id="22" method="true" symbol="appExit"/>
+        <entry field="true" id="21" symbol="activityInProgress"/>
+        <entry field="true" id="50" symbol="kmOrMileInMeters"/>
+        <entry field="true" id="47" symbol="inverseBackgroundColor"/>
+        <entry field="true" id="27" symbol="distanceStr"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry field="true" id="8388750" symbol="currentCadence"/>
+        <entry id="64" module="true" symbol="Layouts"/>
+        <entry field="true" id="40" symbol="gpsSignal"/>
+        <entry id="8388642" module="true" symbol="Position"/>
+        <entry id="56" method="true" symbol="setDeviceSettingsDependentVariables"/>
+        <entry id="9" object="true" symbol="Alert"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="8389743" symbol="backgroundColor"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435535" name="view" stackId="1" startPc="268435505"/>
+        <entry arg="true" endPc="268435558" name="evt" stackId="1" startPc="268435536"/>
+        <entry arg="true" endPc="268436371" name="info" stackId="1" startPc="268436122"/>
+        <entry arg="true" endPc="268436405" name="dc" stackId="1" startPc="268436391"/>
+        <entry arg="true" endPc="268436959" name="battery" stackId="1" startPc="268436503"/>
+        <entry arg="true" endPc="268436959" name="dc" stackId="2" startPc="268436503"/>
+        <entry arg="true" endPc="268436959" name="xStart" stackId="3" startPc="268436503"/>
+        <entry arg="true" endPc="268436959" name="yStart" stackId="4" startPc="268436503"/>
+        <entry arg="true" endPc="268436959" name="width" stackId="5" startPc="268436503"/>
+        <entry arg="true" endPc="268436959" name="height" stackId="6" startPc="268436503"/>
+        <entry arg="true" endPc="268437370" name="dc" stackId="1" startPc="268436960"/>
+        <entry arg="true" endPc="268437370" name="xStart" stackId="2" startPc="268436960"/>
+        <entry arg="true" endPc="268437370" name="yStart" stackId="3" startPc="268436960"/>
+        <entry arg="true" endPc="268437370" name="color1" stackId="4" startPc="268436960"/>
+        <entry arg="true" endPc="268437370" name="color2" stackId="5" startPc="268436960"/>
+        <entry arg="true" endPc="268437370" name="color3" stackId="6" startPc="268436960"/>
+        <entry arg="true" endPc="268437625" name="dc" stackId="1" startPc="268437371"/>
+        <entry arg="true" endPc="268438330" name="dc" stackId="1" startPc="268437626"/>
+        <entry endPc="268438329" name="distStr" stackId="2" startPc="268437630"/>
+        <entry endPc="268438329" name="lastLapString" stackId="3" startPc="268437630"/>
+        <entry endPc="268438329" name="duration" stackId="4" startPc="268437630"/>
+        <entry endPc="268438026" name="hours" stackId="5" startPc="268437831"/>
+        <entry endPc="268438026" name="minutes" stackId="6" startPc="268437831"/>
+        <entry endPc="268438026" name="seconds" stackId="7" startPc="268437831"/>
+        <entry arg="true" endPc="268438513" name="newKey" stackId="1" startPc="268438331"/>
+        <entry endPc="268438512" name="alert" stackId="2" startPc="268438335"/>
+        <entry arg="true" endPc="268438785" name="int" stackId="1" startPc="268438572"/>
+        <entry endPc="268438781" name="alert" stackId="2" startPc="268438621"/>
+        <entry arg="true" endPc="268438911" name="speedMetersPerSecond" stackId="1" startPc="268438786"/>
+        <entry endPc="268438899" name="metersPerMinute" stackId="2" startPc="268438811"/>
+        <entry endPc="268438899" name="minutesPerKmOrMilesDecimal" stackId="3" startPc="268438811"/>
+        <entry endPc="268438899" name="minutesPerKmOrMilesFloor" stackId="4" startPc="268438811"/>
+        <entry endPc="268438899" name="seconds" stackId="5" startPc="268438811"/>
+        <entry arg="true" endPc="268438970" name="float" stackId="1" startPc="268438925"/>
+        <entry endPc="268438970" name="floor" stackId="2" startPc="268438929"/>
+        <entry endPc="268439258" name="session" stackId="1" startPc="268438975"/>
+        <entry endPc="268439255" name="alert" stackId="2" startPc="268439033"/>
+        <entry arg="true" endPc="268439599" name="dc" stackId="1" startPc="268439353"/>
+        <entry arg="true" endPc="268440017" name="dc" stackId="1" startPc="268439600"/>
+        <entry endPc="268440016" name="clockTime" stackId="2" startPc="268439604"/>
+        <entry endPc="268440016" name="time" stackId="3" startPc="268439604"/>
+        <entry endPc="268440016" name="ampm" stackId="4" startPc="268439604"/>
+        <entry arg="true" endPc="268440068" name="hour" stackId="1" startPc="268440018"/>
+        <entry arg="true" endPc="268440597" name="distanceL" stackId="1" startPc="268440504"/>
+        <entry endPc="268440597" name="_tmpStr" stackId="2" startPc="268440508"/>
+        <entry endPc="268440581" name="distanceKmOrMiles" stackId="3" startPc="268440519"/>
+        <entry arg="true" endPc="268440737" name="dc" stackId="1" startPc="268440598"/>
+        <entry endPc="268440736" name="activityInfo" stackId="2" startPc="268440602"/>
+        <entry arg="true" endPc="268440806" name="view" stackId="1" startPc="268440776"/>
+        <entry arg="true" endPc="268440963" name="evt" stackId="1" startPc="268440807"/>
+        <entry endPc="268440963" name="key" stackId="2" startPc="268440811"/>
+        <entry arg="true" endPc="268441080" name="transition" stackId="1" startPc="268441030"/>
+        <entry arg="true" endPc="268441452" name="params" stackId="1" startPc="268441112"/>
+        <entry arg="true" endPc="268441876" name="dc" stackId="1" startPc="268441474"/>
+        <entry endPc="268441875" name="tWidth" stackId="2" startPc="268441478"/>
+        <entry endPc="268441875" name="tHeight" stackId="3" startPc="268441478"/>
+        <entry endPc="268441875" name="bWidth" stackId="4" startPc="268441478"/>
+        <entry endPc="268441875" name="bHeight" stackId="5" startPc="268441478"/>
+        <entry endPc="268441875" name="bX" stackId="6" startPc="268441478"/>
+        <entry endPc="268441875" name="bY" stackId="7" startPc="268441478"/>
+        <entry endPc="268441758" name="i" stackId="8" startPc="268441686"/>
+        <entry endPc="268441875" name="tX" stackId="9" startPc="268441478"/>
+        <entry endPc="268441875" name="tY" stackId="10" startPc="268441478"/>
+        <entry arg="true" endPc="268441963" name="state" stackId="1" startPc="268441896"/>
+        <entry endPc="268442070" name="delegate" stackId="1" startPc="268441968"/>
+        <entry arg="true" endPc="268442159" name="state" stackId="1" startPc="268442092"/>
+        <entry arg="true" endPc="268442221" name="info" stackId="1" startPc="268442160"/>
+        <entry endPc="268442220" name="posinfo" stackId="2" startPc="268442164"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="avgpace"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="distance"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="duration"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="saved"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="gpsSig"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="pace"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="tmpDist"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="hr"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Delegate" offset="182" parentId="globals" symbolId="Delegate" type="class"/>
+        <dataEntry label="globals/OrienteeringView" offset="245" parentId="globals" symbolId="OrienteeringView" type="class"/>
+        <dataEntry label="globals/Rez" offset="796" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/OrientDelegate" offset="875" parentId="globals" symbolId="OrientDelegate" type="class"/>
+        <dataEntry label="globals/Alert" offset="938" parentId="globals" symbolId="Alert" type="class"/>
+        <dataEntry label="globals/OrienteeringApp" offset="1073" parentId="globals" symbolId="OrienteeringApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1160" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1199" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1230" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1261" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1292" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1395" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Delegate" startPc="268435486">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435535" name="initialize" parent="Delegate" startPc="268435505">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435558" name="onKey" parent="Delegate" startPc="268435536">
+            <param id="evt"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435850" name="&lt;init&gt;" parent="OrienteeringView" startPc="268435559">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436121" name="setDeviceSettingsDependentVariables" parent="OrienteeringView" startPc="268435851">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436371" name="compute" parent="OrienteeringView" startPc="268436122">
+            <param id="info"/>
+            <documentation><![CDATA[<div class="description"> The given info object contains all the current workout<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436390" name="doUpdate" parent="OrienteeringView" startPc="268436372">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436405" name="onLayout" parent="OrienteeringView" startPc="268436391">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436502" name="startRecording" parent="OrienteeringView" startPc="268436406">
+            <documentation><![CDATA[<div class="description"> Start recording a session<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436959" name="drawBattery" parent="OrienteeringView" startPc="268436503">
+            <param id="battery"/>
+            <param id="dc"/>
+            <param id="xStart"/>
+            <param id="yStart"/>
+            <param id="width"/>
+            <param id="height"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437370" name="drawGpsSign" parent="OrienteeringView" startPc="268436960">
+            <param id="dc"/>
+            <param id="xStart"/>
+            <param id="yStart"/>
+            <param id="color1"/>
+            <param id="color2"/>
+            <param id="color3"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437625" name="drawGPS" parent="OrienteeringView" startPc="268437371">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438330" name="drawValues" parent="OrienteeringView" startPc="268437626">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438513" name="zeroLapDistance" parent="OrienteeringView" startPc="268438331">
+            <param id="newKey"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438571" name="startActivity" parent="OrienteeringView" startPc="268438514">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438785" name="getGPSPower" parent="OrienteeringView" startPc="268438572">
+            <param id="int"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438911" name="getMinutesPerKmOrMile" parent="OrienteeringView" startPc="268438786">
+            <param id="speedMetersPerSecond"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438924" name="onHide" parent="OrienteeringView" startPc="268438912">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438970" name="toNumberCeil" parent="OrienteeringView" startPc="268438925">
+            <param id="float"/>
+            <documentation><![CDATA[<div class="description"> convert to integer - round ceiling<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439259" name="stopRecording" parent="OrienteeringView" startPc="268438971">
+            <documentation><![CDATA[<div class="description"> Stop the recording if necessary<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439272" name="onShow" parent="OrienteeringView" startPc="268439260">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439352" name="setupTimer" parent="OrienteeringView" startPc="268439273">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439599" name="drawHeaders" parent="OrienteeringView" startPc="268439353">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440017" name="drawCurrentTime" parent="OrienteeringView" startPc="268439600">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440068" name="computeHour" parent="OrienteeringView" startPc="268440018">
+            <param id="hour"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440107" name="isSessionRecording" parent="OrienteeringView" startPc="268440069">
+            <documentation><![CDATA[<div class="description"> Get whether a session is currently recording<br/> <div class="returns">Returns  true if there is a session currently recording, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440439" name="setColors" parent="OrienteeringView" startPc="268440108">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440470" name="appExit" parent="OrienteeringView" startPc="268440440">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440503" name="initialize" parent="OrienteeringView" startPc="268440471">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440597" name="getDistString" parent="OrienteeringView" startPc="268440504">
+            <param id="distanceL"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440737" name="onUpdate" parent="OrienteeringView" startPc="268440598">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440756" name="&lt;init&gt;" parent="Rez" startPc="268440738">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440775" name="&lt;init&gt;" parent="OrientDelegate" startPc="268440757">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440806" name="initialize" parent="OrientDelegate" startPc="268440776">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440963" name="onKey" parent="OrientDelegate" startPc="268440807">
+            <param id="evt"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440982" name="&lt;init&gt;" parent="Alert" startPc="268440964">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441029" name="onShow" parent="Alert" startPc="268440983">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441080" name="pushView" parent="Alert" startPc="268441030">
+            <param id="transition"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441111" name="dismiss" parent="Alert" startPc="268441081">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441452" name="initialize" parent="Alert" startPc="268441112">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441473" name="onHide" parent="Alert" startPc="268441453">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441876" name="onUpdate" parent="Alert" startPc="268441474">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441895" name="&lt;init&gt;" parent="OrienteeringApp" startPc="268441877">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441963" name="onStart" parent="OrienteeringApp" startPc="268441896">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442070" name="getInitialView" parent="OrienteeringApp" startPc="268441964">
+            <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442091" name="initialize" parent="OrienteeringApp" startPc="268442071">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442159" name="onStop" parent="OrienteeringApp" startPc="268442092">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442221" name="onPositionUpdate" parent="OrienteeringApp" startPc="268442160">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

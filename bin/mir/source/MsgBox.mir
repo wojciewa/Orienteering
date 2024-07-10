@@ -1,0 +1,409 @@
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 1; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 2; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 3; ]
+using Toybox.Timer as :Timer;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 6; ]
+class Alert extends Ui.View{
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 8; @position = 15; ]
+    protected
+    var timer;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 9; @position = 15; ]
+    protected
+    var timeout;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 10; @position = 15; ]
+    protected
+    var text;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 11; @position = 15; ]
+    protected
+    var font;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 12; @position = 15; ]
+    protected
+    var fgcolor;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 13; @position = 15; ]
+    protected
+    var bgcolor;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 15; ]
+    function initialize(params) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_15_32_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 16 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 18 8 ]
+        %tmp.4 = lgetv %params;
+        %tmp.5 = getv function %tmp.4 :get;
+        %tmp.7 = const :text;
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
+        putv self :text %tmp.8;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 19 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_8_if_stmt:
+        %tmp.10 = getv ? :text;
+        %tmp.11 = null;
+        %tmp.12 = eq %tmp.10 %tmp.11;
+        bf %tmp.12 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_26_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 20 12 ]
+        %tmp.13 = "Alert";
+        putv self :text %tmp.13;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_26_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_19_8_if_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 24 8 ]
+        %tmp.14 = lgetv %params;
+        %tmp.15 = getv function %tmp.14 :get;
+        %tmp.17 = const :font;
+        %tmp.18 = invoke %tmp.14 %tmp.15(%tmp.17);
+        putv self :font %tmp.18;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 25 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_8_if_stmt:
+        %tmp.20 = getv ? :font;
+        %tmp.21 = null;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        bf %tmp.22 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_26_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 26 12 ]
+        %tmp.23 = getm $.Toybox.Graphics;
+        %tmp.24 = getv %tmp.23 :FONT_MEDIUM;
+        putv self :font %tmp.24;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_26_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_25_8_if_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 29 8 ]
+        %tmp.25 = lgetv %params;
+        %tmp.26 = getv function %tmp.25 :get;
+        %tmp.28 = const :fgcolor;
+        %tmp.29 = invoke %tmp.25 %tmp.26(%tmp.28);
+        putv self :fgcolor %tmp.29;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 30 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_8_if_stmt:
+        %tmp.31 = getv ? :fgcolor;
+        %tmp.32 = null;
+        %tmp.33 = eq %tmp.31 %tmp.32;
+        bf %tmp.33 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_29_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 31 12 ]
+        %tmp.34 = getm $.Toybox.Graphics;
+        %tmp.35 = getv %tmp.34 :COLOR_BLACK;
+        putv self :fgcolor %tmp.35;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_29_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_30_8_if_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 34 8 ]
+        %tmp.36 = lgetv %params;
+        %tmp.37 = getv function %tmp.36 :get;
+        %tmp.39 = const :bgcolor;
+        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.39);
+        putv self :bgcolor %tmp.40;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 35 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_8_if_stmt:
+        %tmp.42 = getv ? :bgcolor;
+        %tmp.43 = null;
+        %tmp.44 = eq %tmp.42 %tmp.43;
+        bf %tmp.44 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_29_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 36 12 ]
+        %tmp.45 = getm $.Toybox.Graphics;
+        %tmp.46 = getv %tmp.45 :COLOR_WHITE;
+        putv self :bgcolor %tmp.46;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_29_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_35_8_if_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 39 8 ]
+        %tmp.47 = lgetv %params;
+        %tmp.48 = getv function %tmp.47 :get;
+        %tmp.50 = const :timeout;
+        %tmp.51 = invoke %tmp.47 %tmp.48(%tmp.50);
+        putv self :timeout %tmp.51;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 40 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_8_if_stmt:
+        %tmp.53 = getv ? :timeout;
+        %tmp.54 = null;
+        %tmp.55 = eq %tmp.53 %tmp.54;
+        bf %tmp.55 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_29_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 41 12 ]
+        %tmp.56 = 2000;
+        putv self :timeout %tmp.56;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_29_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_40_8_if_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 44 8 ]
+        %tmp.59 = getm $.Toybox.Timer;
+        %tmp.60 = getv function ? %tmp.59 :Timer;
+        %tmp.57 = newc %tmp.60 ();
+        putv self :timer %tmp.57;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_15_32_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 47; ]
+    function onShow() {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_47_22_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 48 8 ]
+        %tmp.2 = getv ? :timer;
+        %tmp.3 = getv function %tmp.2 :start;
+        %tmp.4 = self;
+        %tmp.5 = getv function %tmp.4 :method;
+        %tmp.7 = const :dismiss;
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
+        %tmp.10 = getv ? :timeout;
+        %tmp.11 = false;
+        invoke %tmp.2 %tmp.3(%tmp.8, %tmp.10, %tmp.11);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_47_22_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 51; ]
+    function onHide() {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_51_22_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 52 8 ]
+        %tmp.2 = getv ? :timer;
+        %tmp.3 = getv function %tmp.2 :stop;
+        invoke %tmp.2 %tmp.3();
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_51_22_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 55; ]
+    function onUpdate(dc) {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 56 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %tWidth.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getTextWidthInPixels;
+        %tmp.4 = getv ? :text;
+        %tmp.6 = getv ? :font;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+        lputv %tWidth.1 %tmp.7;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 57 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %tHeight.2 = local;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = getv function %tmp.8 :getFontHeight;
+        %tmp.11 = getv ? :font;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        lputv %tHeight.2 %tmp.12;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 59 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %bWidth.3 = local;
+        %tmp.14 = lgetv %tWidth.1;
+        %tmp.15 = 14;
+        %tmp.16 = add %tmp.14 %tmp.15;
+        lputv %bWidth.3 %tmp.16;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 60 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %bHeight.4 = local;
+        %tmp.18 = lgetv %tHeight.2;
+        %tmp.19 = 14;
+        %tmp.20 = add %tmp.18 %tmp.19;
+        lputv %bHeight.4 %tmp.20;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 62 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %bX.5 = local;
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = getv function %tmp.21 :getWidth;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.25 = lgetv %bWidth.3;
+        %tmp.26 = sub %tmp.23 %tmp.25;
+        %tmp.27 = 2;
+        %tmp.28 = div %tmp.26 %tmp.27;
+        lputv %bX.5 %tmp.28;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 63 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %bY.6 = local;
+        %tmp.29 = lgetv %dc;
+        %tmp.30 = getv function %tmp.29 :getHeight;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        %tmp.33 = lgetv %bHeight.4;
+        %tmp.34 = sub %tmp.31 %tmp.33;
+        %tmp.35 = 2;
+        %tmp.36 = div %tmp.34 %tmp.35;
+        lputv %bY.6 %tmp.36;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 65 8 ]
+        %tmp.37 = lgetv %dc;
+        %tmp.38 = getv function %tmp.37 :setColor;
+        %tmp.40 = getv ? :bgcolor;
+        %tmp.42 = getv ? :bgcolor;
+        invoke %tmp.37 %tmp.38(%tmp.40, %tmp.42);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 66 8 ]
+        %tmp.43 = lgetv %dc;
+        %tmp.44 = getv function %tmp.43 :fillRectangle;
+        %tmp.46 = lgetv %bX.5;
+        %tmp.48 = lgetv %bY.6;
+        %tmp.50 = lgetv %bWidth.3;
+        %tmp.52 = lgetv %bHeight.4;
+        invoke %tmp.43 %tmp.44(%tmp.46, %tmp.48, %tmp.50, %tmp.52);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 68 8 ]
+        %tmp.53 = lgetv %dc;
+        %tmp.54 = getv function %tmp.53 :setColor;
+        %tmp.56 = getv ? :fgcolor;
+        %tmp.58 = getv ? :bgcolor;
+        invoke %tmp.53 %tmp.54(%tmp.56, %tmp.58);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 69 8 ]
+        for @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_test @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_incr @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_init:
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_begin" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_end" ]
+        %i.7 = local;
+        %tmp.59 = 0;
+        lputv %i.7 %tmp.59;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_test:
+        %tmp.61 = lgetv %i.7;
+        %tmp.62 = 3;
+        %tmp.63 = lt %tmp.61 %tmp.62;
+        bf %tmp.63 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_begin:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_36_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 70 12 ]
+        %tmp.64 = lgetv %bX.5;
+        %tmp.66 = lgetv %i.7;
+        %tmp.67 = add %tmp.64 %tmp.66;
+        lputv %bX.5 %tmp.67;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 71 12 ]
+        %tmp.68 = lgetv %bY.6;
+        %tmp.70 = lgetv %i.7;
+        %tmp.71 = add %tmp.68 %tmp.70;
+        lputv %bY.6 %tmp.71;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 72 12 ]
+        %tmp.72 = lgetv %bWidth.3;
+        %tmp.73 = 2;
+        %tmp.75 = lgetv %i.7;
+        %tmp.76 = mul %tmp.73 %tmp.75;
+        %tmp.77 = sub %tmp.72 %tmp.76;
+        lputv %bWidth.3 %tmp.77;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 73 12 ]
+        %tmp.78 = lgetv %bHeight.4;
+        %tmp.79 = 2;
+        %tmp.81 = lgetv %i.7;
+        %tmp.82 = mul %tmp.79 %tmp.81;
+        %tmp.83 = sub %tmp.78 %tmp.82;
+        lputv %bHeight.4 %tmp.83;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 75 12 ]
+        %tmp.84 = lgetv %dc;
+        %tmp.85 = getv function %tmp.84 :drawRectangle;
+        %tmp.87 = lgetv %bX.5;
+        %tmp.89 = lgetv %bY.6;
+        %tmp.91 = lgetv %bWidth.3;
+        %tmp.93 = lgetv %bHeight.4;
+        invoke %tmp.84 %tmp.85(%tmp.87, %tmp.89, %tmp.91, %tmp.93);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_36_stop:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_incr:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 69 ]
+        %tmp.96 = lgetv %i.7;
+        %tmp.97 = add %tmp.96 1;
+        lputv %i.7 %tmp.97;
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_test;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_69_8_for_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 78 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %tX.8 = local;
+        %tmp.98 = lgetv %dc;
+        %tmp.99 = getv function %tmp.98 :getWidth;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        %tmp.101 = 2;
+        %tmp.102 = div %tmp.100 %tmp.101;
+        lputv %tX.8 %tmp.102;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 79 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop" ]
+        %tY.9 = local;
+        %tmp.104 = lgetv %bY.6;
+        %tmp.106 = lgetv %bHeight.4;
+        %tmp.107 = 2;
+        %tmp.108 = div %tmp.106 %tmp.107;
+        %tmp.109 = add %tmp.104 %tmp.108;
+        lputv %tY.9 %tmp.109;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 81 8 ]
+        %tmp.110 = lgetv %dc;
+        %tmp.111 = getv function %tmp.110 :setColor;
+        %tmp.113 = getv ? :fgcolor;
+        %tmp.115 = getv ? :bgcolor;
+        invoke %tmp.110 %tmp.111(%tmp.113, %tmp.115);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 82 8 ]
+        %tmp.116 = lgetv %dc;
+        %tmp.117 = getv function %tmp.116 :drawText;
+        %tmp.119 = lgetv %tX.8;
+        %tmp.121 = lgetv %tY.9;
+        %tmp.123 = getv ? :font;
+        %tmp.125 = getv ? :text;
+        %tmp.126 = getm $.Toybox.Graphics;
+        %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_CENTER;
+        %tmp.128 = getm $.Toybox.Graphics;
+        %tmp.129 = getv %tmp.128 :TEXT_JUSTIFY_VCENTER;
+        %tmp.130 = bitor %tmp.127 %tmp.129;
+        invoke %tmp.116 %tmp.117(%tmp.119, %tmp.121, %tmp.123, %tmp.125, %tmp.130);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_55_26_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 85; ]
+    function dismiss() {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_85_23_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 86 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :popView;
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_85_23_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 89; ]
+    function pushView(transition) {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_89_34_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 90 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :pushView;
+        %tmp.4 = lgetv %self;
+        %tmp.8 = getv ? :Delegate;
+        %tmp.10 = lgetv %self;
+        %tmp.5 = newc %tmp.8 (%tmp.10);
+        %tmp.12 = lgetv %transition;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5, %tmp.12);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_89_34_stop:
+    }
+}
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 95; ]
+class Delegate extends Ui.InputDelegate{
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 95; ]
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 95; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 97; @position = 15; ]
+    protected
+    var view;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 99; ]
+    function initialize(view) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_99_30_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 100 8 ]
+        %tmp.2 = getv ? :InputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 101 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :view %tmp.5;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_99_30_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 104; ]
+    function onKey(evt) {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_104_24_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 105 8 ]
+        %tmp.2 = getv ? :view;
+        %tmp.3 = getv function %tmp.2 :dismiss;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 106 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_104_24_stop:
+    }
+}
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 1; ]
+<init> {
+}

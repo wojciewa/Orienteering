@@ -1,0 +1,142 @@
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 4; ]
+import Toybox.Position;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 5; ]
+using Toybox.System as :System;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 7; ]
+class OrienteeringApp extends Application.AppBase{
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 9; @position = 8; ]
+    var _mainView;
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 11; ]
+    function initialize() as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_11_26_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 12 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_11_26_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 16; ]
+    function onStart(state as Dictionary or Null) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_16_51_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 17 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Start";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 18 8 ]
+        %tmp.4 = getm $.Toybox.Position;
+        %tmp.5 = getv function %tmp.4 :enableLocationEvents;
+        %tmp.6 = getm $.Toybox.Position;
+        %tmp.7 = getv %tmp.6 :LOCATION_CONTINUOUS;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :method;
+        %tmp.11 = const :onPositionUpdate;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.12);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_16_51_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 22; ]
+    function onStop(state as Dictionary or Null) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_22_50_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 23 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Stop";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 24 8 ]
+        %tmp.4 = getm $.Toybox.Position;
+        %tmp.5 = getv function %tmp.4 :enableLocationEvents;
+        %tmp.6 = getm $.Toybox.Position;
+        %tmp.7 = getv %tmp.6 :LOCATION_DISABLE;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :method;
+        %tmp.11 = const :onPositionUpdate;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.12);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_22_50_stop:
+    }
+    //! Return the initial view of your application here
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 28; ]
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_28_65_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 29 8 ]
+        %tmp.4 = getm $;
+        %tmp.5 = getv %tmp.4 :OrienteeringView;
+        %tmp.1 = newc %tmp.5 ();
+        putv self :_mainView %tmp.1;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 30 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_28_65_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_28_65_stop" ]
+        %delegate.1 = local;
+        %tmp.9 = getm $;
+        %tmp.10 = getv %tmp.9 :OrientDelegate;
+        %tmp.12 = getv ? :_mainView;
+        %tmp.6 = newc %tmp.10 (%tmp.12);
+        lputv %delegate.1 %tmp.6;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 31 8 ]
+        %tmp.13 = newa Array<Views or InputDelegates> 2;
+        %tmp.15 = getv ? :_mainView;
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.19 = lgetv %delegate.1;
+        %tmp.20 = dup %tmp.17;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        ret %tmp.21;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_28_65_stop:
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 34; ]
+    function onPositionUpdate(info) {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_34_36_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 35 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_34_36_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_34_36_stop" ]
+        %posinfo.1 = local;
+        %tmp.2 = lgetv %info;
+        lputv %posinfo.1 %tmp.2;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 36 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_8_if_stmt:
+        %tmp.3 = lgetv %info;
+        %tmp.4 = getv %tmp.3 :accuracy;
+        %tmp.5 = getm $.Toybox.Position;
+        %tmp.6 = getv %tmp.5 :QUALITY_POOR;
+        %tmp.7 = gte %tmp.4 %tmp.6;
+        bf %tmp.7 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_51_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 38 12 ]
+        %tmp.9 = getv ? :_mainView;
+        %tmp.10 = getv function %tmp.9 :getGPSPower;
+        %tmp.11 = lgetv %info;
+        %tmp.12 = getv %tmp.11 :accuracy;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_51_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_36_8_if_end:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_34_36_stop:
+    }
+}
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 45; ]
+function getApp() as OrienteeringApp {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_45_37_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 46 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 OrienteeringApp;
+    ret %tmp.4;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_45_37_stop:
+}
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 1; ]
+<init> {
+}
