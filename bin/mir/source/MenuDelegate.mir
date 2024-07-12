@@ -1,0 +1,178 @@
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 6; ]
+import Toybox.Lang;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 7; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 10; ]
+class MenuDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 12; @position = 16; ]
+    private
+    var _parentView as OrienteeringView;
+    //! Constructor
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 15; ]
+    public
+    function initialize(view as OrienteeringView) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_15_57_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 16 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 17 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :_parentView %tmp.5;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_15_57_stop:
+    }
+    //! Handle the menu event
+    //! @return true if handled, false otherwise
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 22; ]
+    public
+    function onMenu() as Boolean {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_22_40_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 25 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_22_40_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_22_40_stop" ]
+        %menu.1 = local;
+        %tmp.3 = getm $.Toybox.WatchUi;
+        %tmp.4 = getv function ? %tmp.3 :Menu;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %menu.1 %tmp.1;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 26 8 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_22_40_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_22_40_stop" ]
+        %delegate.2 = local;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 28 8 ]
+        %tmp.5 = lgetv %menu.1;
+        %tmp.6 = getv function %tmp.5 :addItem;
+        %tmp.7 = "Start";
+        %tmp.9 = const :m_start;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.9);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 29 8 ]
+        %tmp.10 = lgetv %menu.1;
+        %tmp.11 = getv function %tmp.10 :addItem;
+        %tmp.12 = "Pause";
+        %tmp.14 = const :m_pause;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.14);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 30 8 ]
+        %tmp.15 = lgetv %menu.1;
+        %tmp.16 = getv function %tmp.15 :addItem;
+        %tmp.17 = "Stop";
+        %tmp.19 = const :m_stop;
+        invoke %tmp.15 %tmp.16(%tmp.17, %tmp.19);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 31 8 ]
+        %tmp.23 = getv ? :MenuIDelegate;
+        %tmp.20 = newc %tmp.23 ();
+        lputv %delegate.2 %tmp.20;
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 32 8 ]
+        %tmp.24 = getm $.Toybox.WatchUi;
+        %tmp.25 = getv function %tmp.24 :pushView;
+        %tmp.27 = lgetv %menu.1;
+        %tmp.29 = lgetv %delegate.2;
+        %tmp.30 = getm $.Toybox.WatchUi;
+        %tmp.31 = getv %tmp.30 :SLIDE_IMMEDIATE;
+        invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29, %tmp.31);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 33 8 ]
+        %tmp.32 = true;
+        ret %tmp.32;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_22_40_stop:
+    }
+}
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 38; ]
+class MenuIDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 38; ]
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 38; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 40; @position = 16; ]
+    private
+    var _parentView as OrienteeringView;
+    //! Constructor
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 43; ]
+    public
+    function initialize(view as OrienteeringView) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_43_57_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 44 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 45 8 ]
+        %tmp.5 = lgetv %view;
+        putv self :_parentView %tmp.5;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_43_57_stop:
+    }
+    //! Handle a menu item being selected
+    //! @param item Symbol identifier of the menu item that was chosen
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 50; ]
+    public
+    function onMenuItem(item as Symbol) as Void {
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_50_55_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 51 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :m_start;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_8_if_false;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_30_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 52 12 ]
+        %tmp.7 = getv ? :System;
+        %tmp.8 = getv function %tmp.7 :println;
+        %tmp.9 = "Start";
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 53 12 ]
+        %tmp.11 = getv ? :_parentView;
+        %tmp.12 = getv function %tmp.11 :startActivity;
+        invoke %tmp.11 %tmp.12();
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_30_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_8_if_false:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 55 15 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_15_if_stmt:
+        %tmp.14 = lgetv %item;
+        %tmp.16 = const :m_pause;
+        %tmp.17 = eq %tmp.14 %tmp.16;
+        bf %tmp.17 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_15_if_false;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_15_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_37_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 56 12 ]
+        %tmp.19 = getv ? :System;
+        %tmp.20 = getv function %tmp.19 :println;
+        %tmp.21 = "Item 2";
+        invoke %tmp.19 %tmp.20(%tmp.21);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 57 12 ]
+        %tmp.23 = getv ? :_parentView;
+        %tmp.24 = getv function %tmp.23 :startActivity;
+        invoke %tmp.23 %tmp.24();
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_37_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_15_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_15_if_false:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 58 15 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_15_if_stmt:
+        %tmp.26 = lgetv %item;
+        %tmp.28 = const :m_stop;
+        %tmp.29 = eq %tmp.26 %tmp.28;
+        bf %tmp.29 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_15_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_15_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_36_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc" 59 12 ]
+        %tmp.30 = self;
+        %tmp.31 = getv function %tmp.30 :stopRecording;
+        %tmp.32 = true;
+        invoke %tmp.30 %tmp.31(%tmp.32);
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_36_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_15_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_58_15_if_end:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_55_15_if_end:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_51_8_if_end:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MenuDelegate_mc_50_55_stop:
+    }
+}
+[ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MenuDelegate.mc"; @line = 6; ]
+<init> {
+}

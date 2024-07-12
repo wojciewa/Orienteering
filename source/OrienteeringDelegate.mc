@@ -24,7 +24,14 @@ class OrientDelegate extends WatchUi.InputDelegate {
        if (key != null) {
            //System.println("test");
            System.println(key.toString());
-            if (key == WatchUi.KEY_ENTER) {
+
+           if (key == WatchUi.KEY_ESC) {
+                _parentView.zeroLapDistance();
+            } else if(key == WatchUi.KEY_DOWN){
+                _parentView.appExit();
+            }
+           
+            /*if (key == WatchUi.KEY_ENTER) {
                 _parentView.startActivity();
             } else {
                 _parentView.zeroLapDistance(key);
@@ -32,7 +39,7 @@ class OrientDelegate extends WatchUi.InputDelegate {
 
             if (key == WatchUi.KEY_DOWN){
                 _parentView.appExit();
-            }
+            }*/
         }
         return true;
     }

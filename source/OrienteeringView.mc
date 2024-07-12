@@ -335,13 +335,13 @@ class OrienteeringView extends Ui.View {
             var minutesPerKmOrMilesFloor = minutesPerKmOrMilesDecimal.toNumber();
             var seconds = (minutesPerKmOrMilesDecimal - minutesPerKmOrMilesFloor) * 60;
             return minutesPerKmOrMilesDecimal.format("%2d") + ":" + seconds.format("%02d");
-        }
+        } 
         return ZERO_TIME;
     }
 
-    public function zeroLapDistance(newKey as Ui.Key) as Void {
+    public function zeroLapDistance() as Void {
         
-        var alert = new Alert({
+        /*var alert = new Alert({
                         :timeout => 2000,
                         :font => Gfx.FONT_MEDIUM,
                         :text => Ui.loadResource(Rez.Strings.gpsSig),
@@ -350,13 +350,14 @@ class OrienteeringView extends Ui.View {
                         });
 
         alert.pushView(Ui.SLIDE_UP);
+        */
         
-        /*if (newKey == Ui.KEY_ESC) {
+        //if (newKey == Ui.KEY_ESC) {
             var activityInfo = Act.getActivityInfo();
             lastLapDistance = activityInfo.elapsedDistance != null ? activityInfo.elapsedDistance : 0;
             //System.println("===== ZERO =====");
-        }
-        */
+        //}
+        
         
     }
 
@@ -367,7 +368,7 @@ class OrienteeringView extends Ui.View {
                 startRecording();
                 //System.println("Activity Started");
             } else {
-                stopRecording();
+                stopRecording(false);
                 //System.println("Activity Stopped");
             }
         
@@ -375,29 +376,39 @@ class OrienteeringView extends Ui.View {
 
     //! Start recording a session
     public function startRecording() as Void {
-        _session = Se.createSession({:name=>"Walk", :sport=>ActivityRecording.SPORT_WALKING});
-        _session.start();
+        var session = _session;
+        if ((Toybox has :ActivityRecording) && (session != null)) {
+            _session.start();
+        } else {
+            _session = Se.createSession({:name=>"Walk", :sport=>ActivityRecording.SPORT_WALKING});
+            _session.start();
+        }
+
         doUpdate();
     }
 
      //! Stop the recording if necessary
-    public function stopRecording() as Void {
+    public function stopRecording(bSave as Boolean) as Void {
         var session = _session;
         if ((Toybox has :ActivityRecording) && isSessionRecording() && (session != null)) {
             session.stop();
-            session.save();
-            _session = null;
-           doUpdate();
 
-           var alert = new Alert({
-                            :timeout => 2000,
-                            :font => Gfx.FONT_MEDIUM,
-                            :text => Ui.loadResource(Rez.Strings.saved),
-                            :fgcolor => Gfx.COLOR_RED,
-                            :bgcolor => Gfx.COLOR_WHITE
-                            });
+            if(bSave){
+                session.save();
+                _session = null;
+            
 
-            alert.pushView(Ui.SLIDE_UP);
+            var alert = new Alert({
+                                :timeout => 2000,
+                                :font => Gfx.FONT_MEDIUM,
+                                :text => Ui.loadResource(Rez.Strings.saved),
+                                :fgcolor => Gfx.COLOR_RED,
+                                :bgcolor => Gfx.COLOR_WHITE
+                                });
+
+                alert.pushView(Ui.SLIDE_UP);
+            }
+            doUpdate();
         }
     }
 
