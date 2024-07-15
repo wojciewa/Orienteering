@@ -1,4 +1,5 @@
 An application that calculates the current distance between two points.
+
 Repeatedly during orienteering, I encountered the problem of measuring the distance between two points - for example, at the start, I knew from the map that I had to run 260 meters to the left turn. Instead of counting this in my head, the watch could do it for me, but since I couldn't find the right application, I wrote my own.
 
 The activity starts, of course, by selecting the Start option from the menu; Pressing the LAP button resets the top counter. To save the activity, simply select Stop from the menu. Exit the application by pressing the DOWN button.
