@@ -14,13 +14,13 @@ class OrienteeringApp extends Application.AppBase {
 
     // onStart() is called on application start up
     function onStart(state as Dictionary?) as Void {
-        System.println("Start");
+        
         Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPositionUpdate));
     }
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
-        System.println("Stop");
+        
         Position.enableLocationEvents(Position.LOCATION_DISABLE, method(:onPositionUpdate));
     }
 
@@ -28,14 +28,14 @@ class OrienteeringApp extends Application.AppBase {
     function getInitialView() as Array<Views or InputDelegates>? {
         _mainView = new $.OrienteeringView();
         var delegate = new $.OrientDelegate(_mainView);
-        //var delegate2 = new $.MenuDelegate(_mainView);
+        
         return [ _mainView, delegate] as Array<Views or InputDelegates>;
     }
 
     function onPositionUpdate(info) {
         var posinfo = info;
         if (info.accuracy >= Position.QUALITY_POOR){
-           //System.println(info.accuracy);
+           
             _mainView.getGPSPower(info.accuracy);
         }
         

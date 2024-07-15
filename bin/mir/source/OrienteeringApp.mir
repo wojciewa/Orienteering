@@ -31,41 +31,31 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_1
     [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 16; ]
     function onStart(state as Dictionary or Null) as Void {
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_16_51_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 17 8 ]
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = "Start";
-        invoke %tmp.1 %tmp.2(%tmp.3);
 [ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 18 8 ]
-        %tmp.4 = getm $.Toybox.Position;
-        %tmp.5 = getv function %tmp.4 :enableLocationEvents;
-        %tmp.6 = getm $.Toybox.Position;
-        %tmp.7 = getv %tmp.6 :LOCATION_CONTINUOUS;
-        %tmp.8 = self;
-        %tmp.9 = getv function %tmp.8 :method;
-        %tmp.11 = const :onPositionUpdate;
-        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
-        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.12);
+        %tmp.1 = getm $.Toybox.Position;
+        %tmp.2 = getv function %tmp.1 :enableLocationEvents;
+        %tmp.3 = getm $.Toybox.Position;
+        %tmp.4 = getv %tmp.3 :LOCATION_CONTINUOUS;
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :method;
+        %tmp.8 = const :onPositionUpdate;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.9);
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_16_51_stop:
     }
     [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc"; @line = 22; ]
     function onStop(state as Dictionary or Null) as Void {
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_22_50_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 23 8 ]
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = "Stop";
-        invoke %tmp.1 %tmp.2(%tmp.3);
 [ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringApp.mc" 24 8 ]
-        %tmp.4 = getm $.Toybox.Position;
-        %tmp.5 = getv function %tmp.4 :enableLocationEvents;
-        %tmp.6 = getm $.Toybox.Position;
-        %tmp.7 = getv %tmp.6 :LOCATION_DISABLE;
-        %tmp.8 = self;
-        %tmp.9 = getv function %tmp.8 :method;
-        %tmp.11 = const :onPositionUpdate;
-        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
-        invoke %tmp.4 %tmp.5(%tmp.7, %tmp.12);
+        %tmp.1 = getm $.Toybox.Position;
+        %tmp.2 = getv function %tmp.1 :enableLocationEvents;
+        %tmp.3 = getm $.Toybox.Position;
+        %tmp.4 = getv %tmp.3 :LOCATION_DISABLE;
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :method;
+        %tmp.8 = const :onPositionUpdate;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.9);
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringApp_mc_22_50_stop:
     }
     //! Return the initial view of your application here

@@ -32,24 +32,16 @@ class OrienteeringView extends Ui.View {
     hidden var hrColor = Graphics.COLOR_RED;
     hidden var headerColor = Graphics.COLOR_DK_GRAY;
         
-    hidden var paceStr, avgPaceStr, hrStr, distanceStr, durationStr, tmpDistStr;
+    hidden var distanceStr, durationStr, tmpDistStr;
     hidden var strTime;
     
-    //hidden var paceData = new DataQueue(10);
-
     hidden var doUpdates = 0;
 
-    //hidden var avgSpeed= 0;
-    //hidden var hr = 0;
     hidden var distance = 0;
-    var lastLapDistance = 0;
-    var lapDistance = 0;
+    hidden var lastLapDistance = 0;
+    hidden var lapDistance = 0;
     hidden var elapsedTime = 0;
     hidden var gpsSignal = 0;
-    
-    hidden var currentCadence = 0;
-    hidden var averageCadence = 0;
-    hidden var maxCadence = 0;
     
     hidden var hasBackgroundColorOption = false;
     var myTimer;
@@ -91,18 +83,11 @@ class OrienteeringView extends Ui.View {
         elapsedTime = info.timerTime != null ? info.timerTime : 0;        
         distance = info.elapsedDistance != null ? info.elapsedDistance : 0;
         
-        // Calculate the lap distance
-        //lastLapDistance = distance - lastLapDistance;
+        // Calculate the temporary distance
         lapDistance = distance - lastLapDistance;
-        //System.println("compute_distance = " + distance.toString());
-        //System.println("compute_lastLapDistance = " + lastLapDistance.toString());
-        //System.println("compute_lapDistance = " + lapDistance.toString());
 
         gpsSignal = info.currentLocationAccuracy != null ? info.currentLocationAccuracy : 0;
 
-        maxCadence = info.maxCadence != null ? info.maxCadence : 0;
-        averageCadence = info.averageCadence != null ? info.averageCadence : 0;
-        currentCadence = info.currentCadence != null ? info.currentCadence : 0;
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -214,7 +199,7 @@ class OrienteeringView extends Ui.View {
         dc.drawLine(0, 104, dc.getWidth(), 104);
     }
 
-    function getDistString(distanceL) // as String //distStr
+    function getDistString(distanceL)
     {
         var _tmpStr;
         if (distanceL > 0) {
@@ -242,10 +227,6 @@ class OrienteeringView extends Ui.View {
 
         distStr = getDistString(distance);
         lastLapString = getDistString(lapDistance);
-        //System.println("drawValues_distance = " + distance.toString());
-        //System.println("drawValues_distance_string = " + distStr);
-        //System.println("drawValues_lapDistance = " + lapDistance.toString());
-        //System.println("drawValues_lapDistance_string = " + lastLapString);
         
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
         dc.drawText(108 , 70, VALUE_FONT, lastLapString, CENTER);
@@ -356,26 +337,10 @@ class OrienteeringView extends Ui.View {
         return ZERO_TIME;
     }
 
-    public function zeroLapDistance() as Void {
-        
-        /*var alert = new Alert({
-                        :timeout => 2000,
-                        :font => Gfx.FONT_MEDIUM,
-                        :text => Ui.loadResource(Rez.Strings.gpsSig),
-                        :fgcolor => Gfx.COLOR_RED,
-                        :bgcolor => Gfx.COLOR_WHITE
-                        });
 
-        alert.pushView(Ui.SLIDE_UP);
-        */
-        
-        //if (newKey == Ui.KEY_ESC) {
-            var activityInfo = Act.getActivityInfo();
-            lastLapDistance = activityInfo.elapsedDistance != null ? activityInfo.elapsedDistance : 0;
-            //System.println("===== ZERO =====");
-        //}
-        
-        
+    public function zeroLapDistance() as Void {
+        var activityInfo = Act.getActivityInfo();
+        lastLapDistance = activityInfo.elapsedDistance != null ? activityInfo.elapsedDistance : 0;
     }
 
     public function startActivity() as Void {
@@ -424,9 +389,15 @@ class OrienteeringView extends Ui.View {
                                 :bBack => true
                                 });
 
-                alert.pushView(Ui.SLIDE_UP);
+            alert.pushView(Ui.SLIDE_IMMEDIATE);
+            
+            //
+            elapsedTime = 0;        
+            distance = 0;
+            lastLapDistance = 0;
+            
             }
-            doUpdate();
+            //doUpdate();
         }
     }
 
@@ -459,7 +430,7 @@ class OrienteeringView extends Ui.View {
                             :bgcolor => Gfx.COLOR_WHITE
                             });
 
-            alert.pushView(Ui.SLIDE_UP);
+            alert.pushView(Ui.SLIDE_IMMEDIATE);
         }
         
     }
