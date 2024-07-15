@@ -1806,7 +1806,7 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_
         [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_396_21_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_396_21_stop" ]
         %alert.2 = local;
         %tmp.33 = getv ? :Alert;
-        %tmp.34 = newd 5;
+        %tmp.34 = newd 6;
         %tmp.36 = const :timeout;
         %tmp.37 = 2000;
         %tmp.38 = dup %tmp.34;
@@ -1835,21 +1835,25 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_
         %tmp.66 = getv %tmp.65 :COLOR_WHITE;
         %tmp.67 = dup %tmp.62;
         %tmp.68 = aputv %tmp.67 %tmp.64 %tmp.66;
-        %tmp.30 = newc %tmp.33 (%tmp.68);
+        %tmp.70 = const :bBack;
+        %tmp.71 = true;
+        %tmp.72 = dup %tmp.68;
+        %tmp.73 = aputv %tmp.72 %tmp.70 %tmp.71;
+        %tmp.30 = newc %tmp.33 (%tmp.73);
         lputv %alert.2 %tmp.30;
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 409 16 ]
-        %tmp.69 = lgetv %alert.2;
-        %tmp.70 = getv function %tmp.69 :pushView;
-        %tmp.71 = getm $.Toybox.WatchUi;
-        %tmp.72 = getv %tmp.71 :SLIDE_UP;
-        invoke %tmp.69 %tmp.70(%tmp.72);
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 410 16 ]
+        %tmp.74 = lgetv %alert.2;
+        %tmp.75 = getv function %tmp.74 :pushView;
+        %tmp.76 = getm $.Toybox.WatchUi;
+        %tmp.77 = getv %tmp.76 :SLIDE_UP;
+        invoke %tmp.74 %tmp.75(%tmp.77);
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_396_21_stop:
         goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_396_12_if_end;
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_396_12_if_end:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 411 12 ]
-        %tmp.73 = self;
-        %tmp.74 = getv function %tmp.73 :doUpdate;
-        invoke %tmp.73 %tmp.74();
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 412 12 ]
+        %tmp.78 = self;
+        %tmp.79 = getv function %tmp.78 :doUpdate;
+        invoke %tmp.78 %tmp.79();
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_393_90_stop:
         goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_393_8_if_end;
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_393_8_if_end:
@@ -1857,49 +1861,49 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_
     }
     //! Get whether a session is currently recording
     //! @return true if there is a session currently recording, false otherwise
-    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 417; ]
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 418; ]
     public
     function isSessionRecording() as Boolean {
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_417_52_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 418 8 ]
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_8_if_stmt:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_52_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 419 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_8_if_stmt:
         %tmp.2 = getv ? :_session;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_8_if_end;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_8_if_true:
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_30_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 419 12 ]
+        bf %tmp.4 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_30_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 420 12 ]
         %tmp.6 = getv ? :_session;
         %tmp.7 = as %tmp.6 { (!Null) };
         %tmp.8 = getv function %tmp.7 :isRecording;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         ret %tmp.9;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_30_stop:
-        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_8_if_end;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_8_if_end:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 421 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_30_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_419_8_if_end:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 422 8 ]
         %tmp.10 = false;
         ret %tmp.10;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_417_52_stop:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_418_52_stop:
     }
-    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 425; ]
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 426; ]
     public
     function appExit() as Void {
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_425_38_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 426 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_426_38_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 427 8 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :popView;
         %tmp.3 = getm $.Toybox.WatchUi;
         %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_425_38_stop:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_426_38_stop:
     }
-    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 429; ]
+    [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 430; ]
     public
     function getGPSPower(int) as Void {
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_429_45_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 430 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_430_45_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 431 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "Sila sygnalu: ";
@@ -1908,19 +1912,19 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = add %tmp.3 %tmp.6;
         invoke %tmp.1 %tmp.2(%tmp.7);
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 432 8 ]
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_432_8_if_stmt:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 433 8 ]
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_if_stmt:
         %tmp.9 = getv ? :hasGPSSignal;
         %tmp.10 = not %tmp.9;
-        bf %tmp.10 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_432_8_if_end;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_432_8_if_true:
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 434 12 ]
+        bf %tmp.10 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_if_true:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_434_8_start:
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 435 12 ]
         %tmp.12 = getv ? :hasGPSSignal;
         %tmp.13 = not %tmp.12;
         putv self :hasGPSSignal %tmp.13;
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 436 12 ]
-        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_stop" ]
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 437 12 ]
+        [ "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_434_8_start" "C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_434_8_stop" ]
         %alert.1 = local;
         %tmp.17 = getv ? :Alert;
         %tmp.18 = newd 5;
@@ -1949,16 +1953,16 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_
         %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
         %tmp.14 = newc %tmp.17 (%tmp.46);
         lputv %alert.1 %tmp.14;
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 444 12 ]
+[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc" 445 12 ]
         %tmp.47 = lgetv %alert.1;
         %tmp.48 = getv function %tmp.47 :pushView;
         %tmp.49 = getm $.Toybox.WatchUi;
         %tmp.50 = getv %tmp.49 :SLIDE_UP;
         invoke %tmp.47 %tmp.48(%tmp.50);
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_stop:
-        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_432_8_if_end;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_432_8_if_end:
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_429_45_stop:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_434_8_stop:
+        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_if_end;
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_433_8_if_end:
+C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_OrienteeringView_mc_430_45_stop:
     }
 }
 [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\OrienteeringView.mc"; @line = 1; ]

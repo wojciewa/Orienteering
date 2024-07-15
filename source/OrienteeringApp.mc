@@ -28,8 +28,8 @@ class OrienteeringApp extends Application.AppBase {
     function getInitialView() as Array<Views or InputDelegates>? {
         _mainView = new $.OrienteeringView();
         var delegate = new $.OrientDelegate(_mainView);
-        var delegate2 = new $.MenuDelegate(_mainView);
-        return [ _mainView, delegate, delegate2] as Array<Views or InputDelegates>;
+        //var delegate2 = new $.MenuDelegate(_mainView);
+        return [ _mainView, delegate] as Array<Views or InputDelegates>;
     }
 
     function onPositionUpdate(info) {

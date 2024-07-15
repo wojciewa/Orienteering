@@ -11,6 +11,7 @@ class Alert extends Ui.View
     hidden var font;
     hidden var fgcolor;
     hidden var bgcolor;
+    hidden var bBack;
 
     function initialize(params) {
         View.initialize();
@@ -39,6 +40,11 @@ class Alert extends Ui.View
         timeout = params.get(:timeout);
         if (timeout == null) {
             timeout = 2000;
+        }
+
+        bBack = params.get(:back);
+        if (bBack == null) {
+            bBack = false;
         }
 
         timer = new Timer.Timer();
@@ -84,6 +90,9 @@ class Alert extends Ui.View
 
     function dismiss() {
         Ui.popView(Ui.SLIDE_IMMEDIATE);
+        if(bBack){
+            Ui.popView(Ui.SLIDE_UP);
+        }
     }
 
     function pushView(transition) {

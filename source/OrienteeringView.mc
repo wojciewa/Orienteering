@@ -403,7 +403,8 @@ class OrienteeringView extends Ui.View {
                                 :font => Gfx.FONT_MEDIUM,
                                 :text => Ui.loadResource(Rez.Strings.saved),
                                 :fgcolor => Gfx.COLOR_RED,
-                                :bgcolor => Gfx.COLOR_WHITE
+                                :bgcolor => Gfx.COLOR_WHITE,
+                                :bBack => true
                                 });
 
                 alert.pushView(Ui.SLIDE_UP);
