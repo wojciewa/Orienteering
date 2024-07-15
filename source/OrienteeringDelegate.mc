@@ -34,7 +34,7 @@ class OrientDelegate extends WatchUi.BehaviorDelegate {
 
        if (key != null) {
            //System.println("test");
-           System.println(key.toString());
+           //System.println(key.toString());
 
            if (key == WatchUi.KEY_ESC) {
                 _parentView.zeroLapDistance();
@@ -63,7 +63,7 @@ class MenuIDelegate extends WatchUi.MenuInputDelegate {
 
     //! Constructor
     public function initialize(view as OrienteeringView) {
-        MenuInputDelegate.initialize();
+        MenuInputDelegate.initialize(); 
         _parentView = view;
     }
 
@@ -71,15 +71,15 @@ class MenuIDelegate extends WatchUi.MenuInputDelegate {
     //! @param item Symbol identifier of the menu item that was chosen
     public function onMenuItem(item as Symbol) as Void {
         if (item == :m_start) {
-            System.println("Start");
+            //System.println("Start");
             _parentView.startActivity();
             //WatchUi.pushView(new $.Rez.Menus.AuxMenu(), new $.AuxMenuDelegate(), WatchUi.SLIDE_UP);
         } else if (item == :m_pause) {
-            System.println("Item 2");
+            //System.println("Item 2");
             _parentView.startActivity();
         } else if (item == :m_stop) {
             _parentView.stopRecording(true);
-             Ui.popView(Ui.SLIDE_UP);
+             //_parentView.popView(WatchUi.SLIDE_UP);
         }
     }
 }

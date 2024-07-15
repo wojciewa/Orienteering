@@ -90,9 +90,9 @@ class Alert extends Ui.View
 
     function dismiss() {
         Ui.popView(Ui.SLIDE_IMMEDIATE);
-        if(bBack){
-            Ui.popView(Ui.SLIDE_UP);
-        }
+        //if(bBack){
+        //    Ui.popView(Ui.SLIDE_UP);
+        //}
     }
 
     function pushView(transition) {

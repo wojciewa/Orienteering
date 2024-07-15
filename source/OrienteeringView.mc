@@ -5,7 +5,9 @@ using Toybox.System as System;
 using Toybox.Activity as Act;
 using Toybox.ActivityRecording as Se;
 using Toybox.Graphics as Gfx;
+//using Toybox.Timer as Timer;
 import Toybox.Lang;
+
 
 class OrienteeringView extends Ui.View {
 
@@ -31,6 +33,7 @@ class OrienteeringView extends Ui.View {
     hidden var headerColor = Graphics.COLOR_DK_GRAY;
         
     hidden var paceStr, avgPaceStr, hrStr, distanceStr, durationStr, tmpDistStr;
+    hidden var strTime;
     
     //hidden var paceData = new DataQueue(10);
 
@@ -50,6 +53,7 @@ class OrienteeringView extends Ui.View {
     
     hidden var hasBackgroundColorOption = false;
     var myTimer;
+    var batteryTimer, batteryValue;
     hidden var hasGPSSignal=false;
    
     var activityInProgress = false; // To track if activity is in progress
@@ -58,6 +62,7 @@ class OrienteeringView extends Ui.View {
     function initialize() {
         View.initialize();
         setupTimer();
+        batteryValue=100;
         
     }
 
@@ -65,9 +70,19 @@ class OrienteeringView extends Ui.View {
         Ui.requestUpdate();    
     }
 
+    function doBatteryUpdate() as Void {
+        if(batteryValue!=System.getSystemStats().battery) {
+            batteryValue=System.getSystemStats().battery;
+            System.println("Bateria = " + batteryValue.toString() + "% (" + strTime + ")");
+        }
+    }
+
     function setupTimer() {
         myTimer = new Timer.Timer();
         myTimer.start(method(:doUpdate), 1000, true);
+
+        batteryTimer = new Timer.Timer();
+        batteryTimer.start(method(:doBatteryUpdate), 60*1000, true);
     }
 
      //! The given info object contains all the current workout
@@ -157,9 +172,11 @@ class OrienteeringView extends Ui.View {
         if (is24Hour) {
             time = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%.2d")]);
             ampm = "";
+            strTime = time;
         } else {
             time = Lang.format("$1$:$2$", [computeHour(clockTime.hour), clockTime.min.format("%.2d")]);
             ampm = (clockTime.hour < 12) ? "am" : "pm";
+            strTime = time;
         }
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.fillRectangle(0,0,218,25);
@@ -428,7 +445,7 @@ class OrienteeringView extends Ui.View {
     }
 
     public function getGPSPower(int) as Void {
-        System.println("Sila sygnalu: " + int.toString());
+        //System.println("Sila sygnalu: " + int.toString());
         
         if(!hasGPSSignal)
         {

@@ -373,21 +373,6 @@ C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_91_23_star
         %tmp.3 = getm $.Toybox.WatchUi;
         %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 93 8 ]
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_8_if_stmt:
-        %tmp.6 = getv ? :bBack;
-        bf %tmp.6 @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_8_if_end;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_8_if_true:
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_17_start:
-[ "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc" 94 12 ]
-        %tmp.7 = getm $.Toybox.WatchUi;
-        %tmp.8 = getv function %tmp.7 :popView;
-        %tmp.9 = getm $.Toybox.WatchUi;
-        %tmp.10 = getv %tmp.9 :SLIDE_IMMEDIATE;
-        invoke %tmp.7 %tmp.8(%tmp.10);
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_17_stop:
-        goto @C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_8_if_end;
-C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_93_8_if_end:
 C_Users_wojci_OneDrive_Dokumenty_Garmin_Orienteering_source_MsgBox_mc_91_23_stop:
     }
     [ @file = "C:\Users\wojci\OneDrive\Dokumenty\Garmin\Orienteering\source\MsgBox.mc"; @line = 98; ]
