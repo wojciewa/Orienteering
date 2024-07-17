@@ -45,16 +45,20 @@ class OrienteeringView extends Ui.View {
     
     hidden var hasBackgroundColorOption = false;
     var myTimer;
+    var saveTimer;
     var batteryTimer, batteryValue;
     hidden var hasGPSSignal=false;
    
     var activityInProgress = false; // To track if activity is in progress
     private var _session as Se.Session?;
+    var currentActivityType;
     
     function initialize() {
         View.initialize();
         setupTimer();
         batteryValue=100;
+
+        currentActivityType = ActivityRecording.SPORT_WALKING;
         
     }
 
@@ -69,12 +73,27 @@ class OrienteeringView extends Ui.View {
         }
     }
 
+    function saveDone() as Void {
+        var alert = new Alert({
+                                :timeout => 2000,
+                                :font => Gfx.FONT_MEDIUM,
+                                :text => Ui.loadResource(Rez.Strings.saved),
+                                :fgcolor => Gfx.COLOR_RED,
+                                :bgcolor => Gfx.COLOR_WHITE
+                                });
+
+       alert.pushView(Ui.SLIDE_IMMEDIATE);
+       // System.println("Z saveDone()");
+    }
+
     function setupTimer() {
         myTimer = new Timer.Timer();
         myTimer.start(method(:doUpdate), 1000, true);
 
         batteryTimer = new Timer.Timer();
         batteryTimer.start(method(:doBatteryUpdate), 60*1000, true);
+
+        saveTimer = new Timer.Timer();
     }
 
      //! The given info object contains all the current workout
@@ -348,7 +367,7 @@ class OrienteeringView extends Ui.View {
             activityInProgress = !activityInProgress;
             if (activityInProgress) {
                 startRecording();
-                //System.println("Activity Started");
+                //System.println("Activity Started"); 
             } else {
                 stopRecording(false);
                 //System.println("Activity Stopped");
@@ -359,43 +378,52 @@ class OrienteeringView extends Ui.View {
     //! Start recording a session
     public function startRecording() as Void {
         var session = _session;
-        if ((Toybox has :ActivityRecording) && (session != null)) {
-            _session.start();
-        } else {
-            _session = Se.createSession({:name=>"Walk", :sport=>ActivityRecording.SPORT_WALKING});
-            _session.start();
-        }
 
-        doUpdate();
+        //activityInProgress = !activityInProgress;
+        if(!isSessionRecording()) {
+            if ((Toybox has :ActivityRecording) && (session != null)) {
+                _session.start();
+            } else {
+                _session = Se.createSession({:name=>"Walk", :sport=>currentActivityType});
+                _session.start();
+            }
+            activityInProgress = true;
+            doUpdate();
+        }
     }
 
      //! Stop the recording if necessary
     public function stopRecording(bSave as Boolean) as Void {
         var session = _session;
+
         if ((Toybox has :ActivityRecording) && isSessionRecording() && (session != null)) {
+            
+            //activityInProgress = !activityInProgress;
             session.stop();
 
             if(bSave){
                 session.save();
                 _session = null;
+                activityInProgress = false;
             
 
-            var alert = new Alert({
-                                :timeout => 2000,
-                                :font => Gfx.FONT_MEDIUM,
-                                :text => Ui.loadResource(Rez.Strings.saved),
-                                :fgcolor => Gfx.COLOR_RED,
-                                :bgcolor => Gfx.COLOR_WHITE,
-                                :bBack => true
-                                });
+                /*var alert = new Alert({
+                                    :timeout => 2000,
+                                    :font => Gfx.FONT_MEDIUM,
+                                    :text => Ui.loadResource(Rez.Strings.saved),
+                                    :fgcolor => Gfx.COLOR_RED,
+                                    :bgcolor => Gfx.COLOR_WHITE,
+                                    :bBack => true
+                                    });
 
-            alert.pushView(Ui.SLIDE_IMMEDIATE);
-            
-            //
-            elapsedTime = 0;        
-            distance = 0;
-            lastLapDistance = 0;
-            
+                alert.pushView(Ui.SLIDE_IMMEDIATE);
+                */
+                //
+                saveTimer.start(method(:saveDone), 1500, false);
+                elapsedTime = 0;        
+                distance = 0;
+                lastLapDistance = 0;
+                
             }
             //doUpdate();
         }
@@ -410,9 +438,20 @@ class OrienteeringView extends Ui.View {
         return false;
     }
 
+    public function isActivityRunning() as Boolean {
+       
+        return activityInProgress;
+    }
+
     //Exit app
     public function appExit() as Void {
         Ui.popView(Ui.SLIDE_IMMEDIATE);
+    }
+
+    public function setActivityType(s) as Void {
+
+        currentActivityType = s;
+
     }
 
     public function getGPSPower(int) as Void {
@@ -430,7 +469,7 @@ class OrienteeringView extends Ui.View {
                             :bgcolor => Gfx.COLOR_WHITE
                             });
 
-            alert.pushView(Ui.SLIDE_IMMEDIATE);
+           alert.pushView(Ui.SLIDE_IMMEDIATE);
         }
         
     }

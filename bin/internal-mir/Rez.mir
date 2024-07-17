@@ -45,23 +45,37 @@ module Rez {
         [ @file = "Rez.mc"; @line = 15; ]
         import Toybox.Lang;
         [ @file = "Rez.mc"; @line = 16; @position = 19; initialized = true; ]
-        var duration as Symbol;
-        [ @file = "Rez.mc"; @line = 17; @position = 19; initialized = true; ]
         var tmpDist as Symbol;
-        [ @file = "Rez.mc"; @line = 18; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 17; @position = 19; initialized = true; ]
         var distance as Symbol;
-        [ @file = "Rez.mc"; @line = 19; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 18; @position = 19; initialized = true; ]
         var gpsSig as Symbol;
-        [ @file = "Rez.mc"; @line = 20; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 19; @position = 19; initialized = true; ]
         var saved as Symbol;
-        [ @file = "Rez.mc"; @line = 21; @position = 19; initialized = true; ]
+        [ @file = "Rez.mc"; @line = 20; @position = 19; initialized = true; ]
         var pace as Symbol;
+        [ @file = "Rez.mc"; @line = 21; @position = 19; initialized = true; ]
+        var mStop as Symbol;
         [ @file = "Rez.mc"; @line = 22; @position = 19; initialized = true; ]
         var hr as Symbol;
         [ @file = "Rez.mc"; @line = 23; @position = 19; initialized = true; ]
-        var avgpace as Symbol;
+        var sportBike as Symbol;
         [ @file = "Rez.mc"; @line = 24; @position = 19; initialized = true; ]
         var AppName as Symbol;
+        [ @file = "Rez.mc"; @line = 25; @position = 19; initialized = true; ]
+        var duration as Symbol;
+        [ @file = "Rez.mc"; @line = 26; @position = 19; initialized = true; ]
+        var sportRun as Symbol;
+        [ @file = "Rez.mc"; @line = 27; @position = 19; initialized = true; ]
+        var sportWalk as Symbol;
+        [ @file = "Rez.mc"; @line = 28; @position = 19; initialized = true; ]
+        var mActivityType as Symbol;
+        [ @file = "Rez.mc"; @line = 29; @position = 19; initialized = true; ]
+        var mPause as Symbol;
+        [ @file = "Rez.mc"; @line = 30; @position = 19; initialized = true; ]
+        var avgpace as Symbol;
+        [ @file = "Rez.mc"; @line = 31; @position = 19; initialized = true; ]
+        var mStart as Symbol;
     }
 }
 [ @file = "Rez.mc"; @line = 1; ]

@@ -8,4 +8,11 @@
     <string id="tmpDist">TMP DIST</string>
     <string id="gpsSig">GPS!</string>
     <string id="saved">Saved</string>
+    <string id="mActivityType">Activity type</string>
+    <string id="mStart">Start</string>
+    <string id="mPause">Pause</string>
+    <string id="mStop">Stop</string>
+    <string id="sportWalk">Walk</string>
+    <string id="sportRun">Run</string>
+    <string id="sportBike">Bike</string>
 </strings>
