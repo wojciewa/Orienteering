@@ -48,6 +48,7 @@ class OrienteeringView extends Ui.View {
     var saveTimer;
     var batteryTimer, batteryValue;
     hidden var hasGPSSignal=false;
+    hidden var timeFlowMarker = false;
    
     var activityInProgress = false; // To track if activity is in progress
     private var _session as Se.Session?;
@@ -243,6 +244,7 @@ class OrienteeringView extends Ui.View {
         //distance
         var distStr;
         var lastLapString;
+        var order = 0;
 
         distStr = getDistString(distance);
         lastLapString = getDistString(lapDistance);
@@ -265,13 +267,23 @@ class OrienteeringView extends Ui.View {
             
             if (hours == null) {
                 duration = minutes.format("%d") + ":" + seconds.format("%02d");
+            } else if (hours>9){
+                duration = hours.format("%d") + ":" + minutes.format("%02d") + getTimeFlow(); 
             } else {
-                duration = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.format("%02d");
+                /*
+                if(seconds.toString().length > 1)
+                {
+                    duration = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.toString().substring(0,1);
+                } else {
+                    duration = hours.format("%d") + ":" + minutes.format("%02d") + ":0";
+                }
+                */
+                 duration = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.format("%02d");
             }
         } else {
             duration = ZERO_TIME;
         } 
-        dc.drawText(173, 130, VALUE_FONT, duration, CENTER);
+        dc.drawText(170, 130, VALUE_FONT, duration, CENTER);
         
         //signs background
         dc.setColor(inverseBackgroundColor, inverseBackgroundColor);
@@ -286,6 +298,19 @@ class OrienteeringView extends Ui.View {
         drawGPS(dc);
         drawHeaders(dc);
        
+    }
+
+
+    function getTimeFlow() as String 
+    {
+        var ret;
+        timeFlowMarker=!timeFlowMarker;
+        if(timeFlowMarker)
+        {
+            return "*";
+        } else {
+            return "";
+        }
     }
 
     function drawBattery(battery, dc, xStart, yStart, width, height) {                

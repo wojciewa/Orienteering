@@ -73,8 +73,10 @@ module Rez {
         [ @file = "Rez.mc"; @line = 29; @position = 19; initialized = true; ]
         var mPause as Symbol;
         [ @file = "Rez.mc"; @line = 30; @position = 19; initialized = true; ]
-        var avgpace as Symbol;
+        var sportPaddling as Symbol;
         [ @file = "Rez.mc"; @line = 31; @position = 19; initialized = true; ]
+        var avgpace as Symbol;
+        [ @file = "Rez.mc"; @line = 32; @position = 19; initialized = true; ]
         var mStart as Symbol;
     }
 }
