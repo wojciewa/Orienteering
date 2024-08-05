@@ -360,6 +360,9 @@ class OrienteeringView extends Ui.View {
     public function zeroLapDistance() as Void {
         var activityInfo = Act.getActivityInfo();
         lastLapDistance = activityInfo.elapsedDistance != null ? activityInfo.elapsedDistance : 0;
+        if(_session != null){
+            _session.addLap();
+        }
     }
 
     public function startActivity() as Void {
@@ -367,9 +370,11 @@ class OrienteeringView extends Ui.View {
             activityInProgress = !activityInProgress;
             if (activityInProgress) {
                 startRecording();
+                showInfoStartStop(2);
                 //System.println("Activity Started"); 
             } else {
                 stopRecording(false);
+                showInfoStartStop(1);
                 //System.println("Activity Stopped");
             }
         
@@ -393,7 +398,7 @@ class OrienteeringView extends Ui.View {
     }
 
      //! Stop the recording if necessary
-    public function stopRecording(bSave as Boolean) as Void {
+    public function stopRecording(bSave as Boolean, bExit as Boolean) as Void {
         var session = _session;
 
         if ((Toybox has :ActivityRecording) && isSessionRecording() && (session != null)) {
@@ -405,27 +410,23 @@ class OrienteeringView extends Ui.View {
                 session.save();
                 _session = null;
                 activityInProgress = false;
-            
-
-                /*var alert = new Alert({
-                                    :timeout => 2000,
-                                    :font => Gfx.FONT_MEDIUM,
-                                    :text => Ui.loadResource(Rez.Strings.saved),
-                                    :fgcolor => Gfx.COLOR_RED,
-                                    :bgcolor => Gfx.COLOR_WHITE,
-                                    :bBack => true
-                                    });
-
-                alert.pushView(Ui.SLIDE_IMMEDIATE);
-                */
-                //
-                saveTimer.start(method(:saveDone), 1500, false);
-                elapsedTime = 0;        
-                distance = 0;
-                lastLapDistance = 0;
+                if(!bExit) {
+                    saveTimer.start(method(:saveDone), 1500, false);
+                    elapsedTime = 0;        
+                    distance = 0;
+                    lastLapDistance = 0;
+                }
                 
             }
             //doUpdate();
+        }
+    }
+
+    public function StopStart() as Void {
+        var session = _session;
+        if (session != null)
+        {
+            startActivity();
         }
     }
 
@@ -455,7 +456,7 @@ class OrienteeringView extends Ui.View {
     }
 
     public function getGPSPower(int) as Void {
-        //System.println("Sila sygnalu: " + int.toString());
+        
         
         if(!hasGPSSignal)
         {
@@ -470,8 +471,20 @@ class OrienteeringView extends Ui.View {
                             });
 
            alert.pushView(Ui.SLIDE_IMMEDIATE);
+           
         }
         
+    }
+
+    function showInfoStartStop(int) as Void {
+        var alert = new GraphicInfo({
+                            :timeout => 1000,
+                            :gsymbol => int,
+                            :fgcolor => Gfx.COLOR_RED,
+                            :bgcolor => Gfx.COLOR_RED
+                            });
+
+           alert.pushView(Ui.SLIDE_IMMEDIATE);
     }
 
 }

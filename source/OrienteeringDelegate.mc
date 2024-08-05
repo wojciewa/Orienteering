@@ -38,8 +38,12 @@ class OrientDelegate extends WatchUi.BehaviorDelegate {
            if (key == WatchUi.KEY_ESC) {
                 _parentView.zeroLapDistance();
             } else if(key == WatchUi.KEY_DOWN){
+                 _parentView.stopRecording(true, true);
                 _parentView.appExit();
+            } else if (key == WatchUi.KEY_ENTER){
+                _parentView.StopStart();
             }
+
         }
         return true;
     }
@@ -62,9 +66,9 @@ class MenuIDelegate extends WatchUi.MenuInputDelegate {
         if (item == :m_start) {
             _parentView.startRecording();
         } else if (item == :m_pause) {
-            _parentView.stopRecording(false);
+            _parentView.stopRecording(false, false);
         } else if (item == :m_stop) {
-            _parentView.stopRecording(true);
+            _parentView.stopRecording(true, false);
              
         } else if (item == :m_type) {
             var menu = new WatchUi.Menu();
@@ -72,7 +76,8 @@ class MenuIDelegate extends WatchUi.MenuInputDelegate {
             
             menu.addItem(WatchUi.loadResource(Rez.Strings.sportWalk), :m_walk);
             menu.addItem(WatchUi.loadResource(Rez.Strings.sportRun), :m_run);
-            menu.addItem(WatchUi.loadResource(Rez.Strings.sportBike), :m_bike);
+            menu.addItem(WatchUi.loadResource(Rez.Strings.sportBike), :m_bike); 
+            menu.addItem(WatchUi.loadResource(Rez.Strings.sportPaddling), :m_paddling);
             delegate = new MenuIActivityDelegate(_parentView); 
             WatchUi.pushView(menu, delegate, WatchUi.SLIDE_IMMEDIATE);
         }
@@ -99,6 +104,8 @@ class MenuIActivityDelegate extends WatchUi.MenuInputDelegate {
             _parentView.setActivityType(ActivityRecording.SPORT_RUNNING);
         } else if (item == :m_bike) {
             _parentView.setActivityType(ActivityRecording.SPORT_CYCLING);
+        }else if (item == :m_paddling) {
+            _parentView.setActivityType(ActivityRecording.SPORT_PADDLING);
         } 
     }
 }
