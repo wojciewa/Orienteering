@@ -1,0 +1,19 @@
+<strings>
+    <string id="AppName">Orienteering</string>
+    <string id="pace">TEMPO</string>
+    <string id="avgpace">ŚREDNIE TEMPO</string>
+    <string id="hr">TĘTNO</string>
+    <string id="distance">DYSTANS</string>
+    <string id="duration">CZAS</string>
+    <string id="tmpDist">TMP DYSTANS</string>
+    <string id="gpsSig">GPS!</string>
+    <string id="saved">Zapisano</string>
+    <string id="mActivityType">Typ aktywności</string>
+    <string id="mStart">Start</string>
+    <string id="mPause">Pauza</string>
+    <string id="mStop">Stop</string>
+    <string id="sportWalk">Chodzenie</string>
+    <string id="sportRun">Bieganie</string>
+    <string id="sportBike">Rower</string>
+    <string id="sportPaddling">Wioślarstwo</string>
+</strings>
