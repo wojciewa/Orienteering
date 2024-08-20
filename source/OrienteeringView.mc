@@ -16,6 +16,7 @@ class OrienteeringView extends Ui.View {
     hidden const CENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
     hidden const HEADER_FONT = Graphics.FONT_XTINY;
     hidden const VALUE_FONT = Graphics.FONT_NUMBER_MEDIUM;
+    hidden const SPEED_FONT = Graphics.FONT_NUMBER_MILD;
     hidden const ZERO_TIME = "0:00";
     hidden const ZERO_DISTANCE = "0.00";
     
@@ -34,7 +35,7 @@ class OrienteeringView extends Ui.View {
         
     hidden var distanceStr, durationStr, tmpDistStr;
     hidden var strTime;
-    
+    hidden var avgSpeed;
     hidden var doUpdates = 0;
 
     hidden var distance = 0;
@@ -102,7 +103,7 @@ class OrienteeringView extends Ui.View {
         
         elapsedTime = info.timerTime != null ? info.timerTime : 0;        
         distance = info.elapsedDistance != null ? info.elapsedDistance : 0;
-        
+        avgSpeed = info.averageSpeed != null ? info.averageSpeed : 0;
         // Calculate the temporary distance
         lapDistance = distance - lastLapDistance;
 
@@ -244,21 +245,24 @@ class OrienteeringView extends Ui.View {
         //distance
         var distStr;
         var lastLapString;
+        var speedStr;
         var order = 0;
+        var seconds;
 
         distStr = getDistString(distance);
         lastLapString = getDistString(lapDistance);
-        
+        speedStr= avgSpeed.format("%.1f");
         dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
         dc.drawText(108 , 70, VALUE_FONT, lastLapString, CENTER);
-        dc.drawText(54, 130, VALUE_FONT, distStr, CENTER);
-                
+        dc.drawText(25, 100, VALUE_FONT, distStr, Gfx.TEXT_JUSTIFY_LEFT); 
+        dc.drawText(170, 80, SPEED_FONT, speedStr, CENTER);
+                //170/80 
         //duration
         var duration;
         if (elapsedTime != null && elapsedTime > 0) {
             var hours = null;
             var minutes = elapsedTime / 1000 / 60;
-            var seconds = elapsedTime / 1000 % 60;
+            seconds = elapsedTime / 1000 % 60;
             
             if (minutes >= 60) {
                 hours = minutes / 60;
@@ -266,24 +270,20 @@ class OrienteeringView extends Ui.View {
             }
             
             if (hours == null) {
-                duration = minutes.format("%d") + ":" + seconds.format("%02d");
-            } else if (hours>9){
-                duration = hours.format("%d") + ":" + minutes.format("%02d") + getTimeFlow(); 
+                duration = minutes.format("%d"); // + ":" + seconds.format("%02d");
             } else {
-                /*
-                if(seconds.toString().length > 1)
-                {
-                    duration = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.toString().substring(0,1);
-                } else {
-                    duration = hours.format("%d") + ":" + minutes.format("%02d") + ":0";
-                }
-                */
-                 duration = hours.format("%d") + ":" + minutes.format("%02d") + ":" + seconds.format("%02d");
+                duration = hours.format("%d") + ":" + minutes.format("%02d"); // + ":" + seconds.format("%02d");
             }
         } else {
             duration = ZERO_TIME;
+            seconds = 0;
         } 
-        dc.drawText(170, 130, VALUE_FONT, duration, CENTER);
+        //170,130
+        dc.drawText(117, 100, VALUE_FONT, duration, Gfx.TEXT_JUSTIFY_LEFT);
+        
+        var timeTextWidth = dc.getTextWidthInPixels(duration, VALUE_FONT);
+        var secondsX = 117 + timeTextWidth + 2;
+        dc.drawText(secondsX, 110, Gfx.FONT_SMALL, seconds.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
         
         //signs background
         dc.setColor(inverseBackgroundColor, inverseBackgroundColor);
@@ -300,18 +300,6 @@ class OrienteeringView extends Ui.View {
        
     }
 
-
-    function getTimeFlow() as String 
-    {
-        var ret;
-        timeFlowMarker=!timeFlowMarker;
-        if(timeFlowMarker)
-        {
-            return "*";
-        } else {
-            return "";
-        }
-    }
 
     function drawBattery(battery, dc, xStart, yStart, width, height) {                
         dc.setColor(batteryBackground, inactiveGpsBackground);
@@ -398,7 +386,7 @@ class OrienteeringView extends Ui.View {
                 showInfoStartStop(2);
                 //System.println("Activity Started"); 
             } else {
-                stopRecording(false);
+                stopRecording(false,false);
                 showInfoStartStop(1);
                 //System.println("Activity Stopped");
             }
